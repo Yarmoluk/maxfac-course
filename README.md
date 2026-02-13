@@ -11,8 +11,6 @@ An intelligent clinical reference for the full-scope oral and maxillofacial surg
 
 Generated in approximately one hour using Claude Code and Dan McCreary's intelligent textbook methodology. From a blank directory to a 20-chapter, 270-concept clinical reference with AI chatbot — demonstrating that structured knowledge graph pipelines can produce domain-expert-level content at unprecedented speed.
 
-Built as part of coursework for SEIS 666: Digital Transformation with AI at the University of St. Thomas.
-
 ## What This Covers
 
 Six parts organized by clinical workflow:
