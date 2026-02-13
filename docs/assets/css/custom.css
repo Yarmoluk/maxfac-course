@@ -1,0 +1,274 @@
+/* ============================================================
+   Modern Oral & Maxillofacial Surgery - Scientific Theme
+   Color System: Clinical blue-grey with surgical steel accents
+   ============================================================ */
+
+/* --- Color Palette --- */
+:root {
+  /* Primary: Deep clinical blue */
+  --md-primary-fg-color:        #1B3A5C;
+  --md-primary-fg-color--light: #2A5580;
+  --md-primary-fg-color--dark:  #0F2440;
+  --md-primary-bg-color:        #FFFFFF;
+  --md-primary-bg-color--light: #FFFFFF;
+
+  /* Accent: Surgical teal */
+  --md-accent-fg-color:         #00897B;
+  --md-accent-fg-color--transparent: rgba(0, 137, 123, 0.1);
+  --md-accent-bg-color:         #FFFFFF;
+
+  /* Custom tokens */
+  --maxfac-surface:             #F8F9FA;
+  --maxfac-border:              #DEE2E6;
+  --maxfac-text-secondary:      #495057;
+  --maxfac-code-bg:             #F1F3F5;
+}
+
+/* Dark mode overrides */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #90CAF9;
+  --md-primary-fg-color--light: #BBDEFB;
+  --md-primary-fg-color--dark:  #64B5F6;
+  --md-accent-fg-color:         #4DB6AC;
+  --maxfac-surface:             #1E1E1E;
+  --maxfac-border:              #333333;
+  --maxfac-text-secondary:      #ADB5BD;
+  --maxfac-code-bg:             #2D2D2D;
+}
+
+/* --- Typography --- */
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--md-primary-fg-color--dark, #0F2440);
+  border-bottom: 2px solid var(--md-accent-fg-color);
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--md-primary-fg-color);
+  margin-top: 2em;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  color: var(--maxfac-text-secondary);
+}
+
+/* --- Header bar --- */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* --- Navigation tabs --- */
+.md-tabs {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* --- Sidebar --- */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+}
+
+.md-nav__link--active {
+  font-weight: 600;
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* --- Tables: clinical data presentation --- */
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+  border: 1px solid var(--maxfac-border);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  padding: 0.75em 1em;
+  border-bottom: 2px solid var(--md-accent-fg-color);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.6em 1em;
+  border-bottom: 1px solid var(--maxfac-border);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--maxfac-surface);
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+/* --- Admonitions: clinical note styling --- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left: 4px solid;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Clinical pearl */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--md-accent-fg-color);
+}
+
+/* Warning: surgical caution */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: #E65100;
+}
+
+/* Danger: critical safety */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: #B71C1C;
+}
+
+/* Evidence note */
+.md-typeset .admonition.quote,
+.md-typeset details.quote {
+  border-color: #5C6BC0;
+  background-color: rgba(92, 107, 192, 0.05);
+}
+
+/* --- Code blocks --- */
+.md-typeset code {
+  background-color: var(--maxfac-code-bg);
+  border-radius: 3px;
+  font-size: 0.82em;
+  padding: 0.1em 0.4em;
+}
+
+.md-typeset pre {
+  border-radius: 4px;
+  border: 1px solid var(--maxfac-border);
+}
+
+/* --- Footer --- */
+.md-footer {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* --- Search --- */
+.md-search__input {
+  border-radius: 4px;
+}
+
+/* --- Content width --- */
+.md-grid {
+  max-width: 1440px;
+}
+
+/* --- Mermaid diagrams --- */
+.mermaid {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+/* --- Print styles --- */
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer {
+    display: none !important;
+  }
+
+  .md-content {
+    max-width: 100% !important;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.6rem;
+    page-break-after: avoid;
+  }
+
+  .md-typeset table {
+    page-break-inside: avoid;
+  }
+}
+
+/* --- Mobile refinements --- */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset {
+    font-size: 0.85rem;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.5rem;
+  }
+
+  .md-typeset table:not([class]) {
+    font-size: 0.75rem;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 0.5em 0.6em;
+  }
+}
+
+/* --- Citation styling --- */
+.md-typeset .citation {
+  font-size: 0.78rem;
+  color: var(--maxfac-text-secondary);
+  border-left: 3px solid var(--maxfac-border);
+  padding-left: 1em;
+  margin: 0.5em 0;
+}
+
+/* --- CPT/CDT code highlighting --- */
+.md-typeset code.cpt,
+.md-typeset code.cdt {
+  background-color: rgba(0, 137, 123, 0.1);
+  color: #00695C;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code.cpt,
+[data-md-color-scheme="slate"] .md-typeset code.cdt {
+  background-color: rgba(77, 182, 172, 0.15);
+  color: #4DB6AC;
+}
+
+/* --- Tag styling --- */
+.md-typeset .md-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

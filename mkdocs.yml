@@ -1,0 +1,150 @@
+site_name: "Modern Oral & Maxillofacial Surgery"
+site_description: "An intelligent clinical reference for the full-scope OMS practitioner"
+site_author: "Daniel Yarmoluk"
+site_url: https://yarmoluk.github.io/maxfac-course/
+repo_url: https://github.com/Yarmoluk/maxfac-course
+repo_name: Yarmoluk/maxfac-course
+copyright: "&copy; 2026 Daniel Yarmoluk. For authorized use only."
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: en
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/medical-bag
+  favicon: assets/images/favicon.png
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+    - header.autohide
+
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.snippets
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+  - tags
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Yarmoluk/maxfac-course
+  generator: false
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  consent:
+    title: Analytics Consent
+    description: >-
+      This site uses analytics to track usage patterns and identify knowledge gaps
+      for content improvement. No personal health information is collected.
+
+nav:
+  - Home: index.md
+  - Course Description: course-description.md
+  - "Part I - Clinical Foundations":
+    - "Ch 1: Surgical Anatomy": chapters/01/index.md
+    - "Ch 2: Imaging & Diagnosis": chapters/02/index.md
+    - "Ch 3: Anesthesia & Sedation": chapters/03/index.md
+    - "Ch 4: Pharmacology & Pain": chapters/04/index.md
+  - "Part II - Core Procedures":
+    - "Ch 5: Dentoalveolar Surgery": chapters/05/index.md
+    - "Ch 6: Dental Implantology": chapters/06/index.md
+    - "Ch 7: Pathology & Oncology": chapters/07/index.md
+    - "Ch 8: Facial Trauma": chapters/08/index.md
+    - "Ch 9: Orthognathic Surgery": chapters/09/index.md
+    - "Ch 10: TMJ Surgery": chapters/10/index.md
+  - "Part III - Advanced Clinical":
+    - "Ch 11: Craniofacial & Cleft": chapters/11/index.md
+    - "Ch 12: Cosmetic & Aesthetic": chapters/12/index.md
+    - "Ch 13: Sleep Apnea Surgery": chapters/13/index.md
+  - "Part IV - Surgical Technology":
+    - "Ch 14: Robotic Surgery": chapters/14/index.md
+    - "Ch 15: Navigation & Digital": chapters/15/index.md
+    - "Ch 16: 3D Printing & VSP": chapters/16/index.md
+  - "Part V - Practice Operations":
+    - "Ch 17: Billing & Coding": chapters/17/index.md
+    - "Ch 18: Practice Management": chapters/18/index.md
+    - "Ch 19: Telemedicine": chapters/19/index.md
+  - "Part VI - Frontiers":
+    - "Ch 20: Emerging Frontiers": chapters/20/index.md
+  - Learning Graph: learning-graph/index.md
+  - Glossary: glossary/index.md
