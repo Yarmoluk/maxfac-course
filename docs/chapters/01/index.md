@@ -45,7 +45,30 @@ The maxilla is a paired pneumatized bone contributing to the orbit, nasal cavity
 - **Le Fort I osteotomy plane**: The cut passes above the apices of the maxillary teeth, through the lateral nasal wall, and across the pterygomaxillary junction. The descending palatine artery exits the greater palatine foramen approximately 15 mm from the midline at the level of the second/third molar and must be preserved or controlled during downfracture (Bell, *J Oral Surg* 1975;33:412-426).
 - **Maxillary sinus**: The floor lies in intimate relation to the premolar and molar apices. Average bone thickness at the sinus floor is 0.5-2 mm, predisposing to oroantral communications during extraction (CDT D7261 -- primary closure of sinus perforation).
 
-![Diagram: Maxillary buttress system and Le Fort fracture planes](images/maxillary-buttresses.png)
+```mermaid
+graph TD
+    subgraph Vertical["Vertical Buttresses"]
+        NM["Nasomaxillary<br/>(medial)"]
+        ZM["Zygomaticomaxillary<br/>(lateral)"]
+        PM["Pterygomaxillary<br/>(posterior)"]
+    end
+    subgraph Horizontal["Horizontal Buttresses"]
+        FB["Frontal Bar<br/>(superior)"]
+        IR["Infraorbital Rim<br/>(middle)"]
+        PA["Palatal / Alveolar<br/>(inferior)"]
+    end
+    subgraph LeFort["Le Fort Fracture Planes"]
+        LF1["Le Fort I — Transverse maxilla<br/>above apices, through pterygoid plates"]
+        LF2["Le Fort II — Pyramidal<br/>nasofrontal → orbital floor → pterygoid"]
+        LF3["Le Fort III — Craniofacial dysjunction<br/>complete midface separation from cranium"]
+    end
+    NM --- FB
+    ZM --- IR
+    PM --- PA
+    LF1 -. "disrupts PA + PM" .-> PA
+    LF2 -. "disrupts NM + IR" .-> IR
+    LF3 -. "disrupts all buttresses" .-> FB
+```
 
 ### 1.2.3 The Orbit
 
@@ -99,7 +122,31 @@ Exits the skull via foramen ovale. This is the only division with both sensory a
 !!! tip "Clinical Pearl"
     The lingual nerve lies an average of **2.06 mm below the alveolar crest** and **0.58 mm medial to the lingual plate** at the third molar region (Behnia et al., *J Oral Maxillofac Surg* 2000;58:649-651). This proximity explains its vulnerability during periosteal elevation on the lingual aspect of third molars.
 
-![Diagram: Trigeminal nerve branches V1, V2, V3 with foramina](images/trigeminal-v1-v2-v3.png)
+```mermaid
+graph TD
+    TG["Trigeminal Nerve (CN V)<br/>Trigeminal Ganglion"]
+    TG --> V1["V1 — Ophthalmic<br/>Superior Orbital Fissure"]
+    TG --> V2["V2 — Maxillary<br/>Foramen Rotundum"]
+    TG --> V3["V3 — Mandibular<br/>Foramen Ovale"]
+
+    V1 --> SO["Supraorbital n.<br/>Supraorbital foramen (27mm from midline)"]
+    V1 --> ST["Supratrochlear n.<br/>(17mm from midline)"]
+    V1 --> LFN["Lacrimal / Frontal /<br/>Nasociliary nn."]
+
+    V2 --> IO["Infraorbital n.<br/>Infraorbital foramen (6-10mm below rim)"]
+    V2 --> PSA["Post. Superior Alveolar n.<br/>Posterior maxilla"]
+    V2 --> GP["Greater & Lesser Palatine nn.<br/>Palatine foramina"]
+
+    V3 --> IAN["Inferior Alveolar n.<br/>Mandibular foramen → Mental foramen"]
+    V3 --> LN["Lingual n.<br/>Floor of mouth (2mm from crest at M3)"]
+    V3 --> MN["Mental n.<br/>Mental foramen (PM1-PM2)"]
+    V3 --> LB["Long Buccal n.<br/>Anterior ramus"]
+    V3 --> AT["Auriculotemporal n.<br/>Posterior to condylar neck"]
+
+    style V1 fill:#4a90d9,color:#fff
+    style V2 fill:#50b87a,color:#fff
+    style V3 fill:#e6a23c,color:#fff
+```
 
 ### 1.3.2 Facial Nerve (CN VII)
 
@@ -122,7 +169,26 @@ The facial nerve is the motor nerve to the muscles of facial expression and is a
 !!! danger "Critical Safety"
     The **marginal mandibular branch** dips below the inferior border of the mandible in 19-20% of cadaver dissections (Dingman & Grabb, *Plast Reconstr Surg* 1962;29:266-272), traveling as far as 1-2 cm inferior to the mandibular border. During the submandibular (Risdon) approach, the incision should be placed at least 2 cm below the mandibular angle, and the platysma should be elevated with the superficial layer to protect this nerve. Alternatively, staying deep to the facial artery/vein and pterygomasseteric sling after initial skin incision protects the nerve.
 
-![Diagram: Facial nerve extratemporal branches and danger zones](images/facial-nerve-branches.png)
+```mermaid
+graph TD
+    CN7["Facial Nerve (CN VII)<br/>Stylomastoid Foramen"]
+    CN7 --> TF["Temporofacial Trunk"]
+    CN7 --> CF["Cervicofacial Trunk"]
+
+    TF --> T["Temporal Branch<br/>⚠ Frontalis, upper orbicularis oculi"]
+    TF --> Z["Zygomatic Branch<br/>Lower orbicularis oculi, zygomaticus"]
+    CF --> B["Buccal Branch<br/>Buccinator, upper orbicularis oris"]
+    CF --> MM["Marginal Mandibular Branch<br/>⚠ Lower lip depressors, mentalis"]
+    CF --> C["Cervical Branch<br/>Platysma"]
+
+    T -. "DANGER: Crosses zygomatic arch<br/>in temporoparietal fascia" .-> DZ1["Coronal flap<br/>Zygomatic arch repair"]
+    MM -. "DANGER: Dips 1-2cm below<br/>mandibular border in 19-20%" .-> DZ2["Submandibular approach<br/>→ Incise ≥2cm below angle"]
+
+    style T fill:#d9534f,color:#fff
+    style MM fill:#d9534f,color:#fff
+    style DZ1 fill:#f5c6cb,color:#333
+    style DZ2 fill:#f5c6cb,color:#333
+```
 
 ### 1.3.3 Vascular Supply
 
