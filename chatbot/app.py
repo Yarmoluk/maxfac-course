@@ -27,9 +27,12 @@ st.set_page_config(
 # --- Load Knowledge Base ---
 @st.cache_data
 def load_knowledge_base():
+    if not KNOWLEDGE_BASE_PATH.exists():
+        from build_knowledge_base import build
+        build()
     if KNOWLEDGE_BASE_PATH.exists():
         return KNOWLEDGE_BASE_PATH.read_text(encoding="utf-8")
-    return "Knowledge base not yet built. Run build_knowledge_base.py first."
+    return "Knowledge base not yet built."
 
 knowledge_base = load_knowledge_base()
 
