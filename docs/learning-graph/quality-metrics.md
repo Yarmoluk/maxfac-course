@@ -3,9 +3,9 @@
 ## Overview
 
 - **Total Concepts**: 270
-- **Foundational Concepts** (no dependencies): 29
-- **Concepts with Dependencies**: 241
-- **Average Dependencies per Concept**: 1.90
+- **Foundational Concepts** (no dependencies): 17
+- **Concepts with Dependencies**: 253
+- **Average Dependencies per Concept**: 2.38
 
 ## Graph Structure Validation
 
@@ -22,143 +22,76 @@ These concepts have no prerequisites:
 - **26**: CBCT Principles
 - **29**: MRI in OMS
 - **30**: Panoramic Radiography
-- **41**: Ultrasound in OMS
 - **55**: Analgesic Pharmacology
 - **57**: Antibiotic Prophylaxis
 - **59**: Corticosteroid Use
 - **60**: Hemostatic Agents
 - **111**: Trauma Assessment
-- **195**: Injectable Therapies
 - **201**: Surgical Robotics Princ
 - **209**: Navigation Principles
 - **219**: 3D Printing Technology
-- **225**: Piezoelectric Surgery
 - **226**: CDT Code System
 - **227**: CPT Code System
 - **228**: ICD-10 Coding for OMS
 - **236**: Practice Financial KPIs
-- **238**: OMSVision EHR
-- **239**: DSN Cloud Software
-- **240**: WinOMS System
-- **243**: OSHA Compliance
-- **244**: HIPAA Compliance
-- **247**: Malpractice Risk Mgmt
-- **259**: Telemedicine in OMS
-- **263**: ABOMS Certification
-- **266**: Evidence-Based Practice
 
 ## Dependency Chain Analysis
 
-- **Maximum Dependency Chain Length**: 9
+- **Maximum Dependency Chain Length**: 16
 
 ### Longest Learning Path:
 
 1. **Maxillofacial Bone Anatomy** (ID: 1)
 2. **Neurovascular Anatomy** (ID: 5)
-3. **Fascial Planes and Spaces** (ID: 8)
-4. **Surgical Approaches** (ID: 16)
-5. **Biopsy Techniques** (ID: 166)
-6. **SCC of Oral Cavity** (ID: 172)
-7. **Surgical Margins** (ID: 174)
-8. **Free Flap Reconstruction** (ID: 177)
-9. **Fibula Free Flap** (ID: 178)
+3. **Trigeminal Nerve Branches** (ID: 6)
+4. **Local Anesthesia** (ID: 46)
+5. **IV Sedation Protocols** (ID: 48)
+6. **General Anesthesia in OMS** (ID: 49)
+7. **Airway Management** (ID: 50)
+8. **Emergency Protocols** (ID: 52)
+9. **ATLS for OMS** (ID: 112)
+10. **Mandible Fracture Types** (ID: 113)
+11. **Condylar Fracture** (ID: 115)
+12. **TMJ Pathophysiology** (ID: 151)
+13. **TMD Diagnosis** (ID: 152)
+14. **Conservative TMJ Mgmt** (ID: 153)
+15. **TMJ Arthroscopy** (ID: 155)
+16. **Disc Repositioning** (ID: 156)
 
 ## Orphaned Nodes Analysis
 
-- **Total Orphaned Nodes**: 141
+- **Total Orphaned Nodes**: 55
 
 Concepts that are not prerequisites for any other concept:
 
-- **12**: Salivary Gland Anatomy
-- **17**: Danger Zones in Surgery
-- **23**: Tissue Biomechanics
-- **34**: Radiation Safety
-- **44**: Radiographic Diagnosis
-- **45**: Contrast-Enhanced CT
-- **47**: Nerve Block Techniques
-- **52**: Emergency Protocols
-- **53**: Anesthesia Permit Reqs
-- **54**: Pediatric Sedation
-- **62**: Anticoagulant Management
-- **63**: ERAS Protocols
-- **64**: CDC Opioid Guidelines
-- **65**: Pharmacogenomics
-- **69**: Impaction Classification
-- **72**: Lingual Nerve Injury
-- **73**: Dry Socket Management
-- **74**: OAC/OAF Management
-- **76**: Pre-Prosthetic Surgery
-- **77**: Tori and Exostoses
+- **41**: Ultrasound in OMS
+- **83**: Ludwig Angina
+- **84**: Necrotizing Fasciitis
+- **90**: Robotic Implant Placement
+- **99**: GBR Membrane Techniques
+- **102**: All-on-X Protocols
+- **105**: Implant Complications
+- **114**: Mandibular Angle Fracture
+- **116**: Symphysis Fracture
+- **124**: Pediatric Facial Fracture
+- **130**: Nav-Guided Trauma Repair
+- **140**: Surgery-First Approach
+- **145**: Orthognathic Complications
+- **146**: Class II Correction
+- **147**: Class III Correction
+- **148**: Facial Asymmetry Correct
+- **150**: Bimaxillary Surgery
+- **154**: TMJ Arthrocentesis
+- **156**: Disc Repositioning
+- **157**: Discectomy
 
-*...and 121 more*
+*...and 35 more*
 
 ## Connected Components
 
-- **Number of Connected Components**: 11
+- **Number of Connected Components**: 1
 
-⚠️ Multiple disconnected subgraphs detected:
-
-### Component 1 (252 concepts)
-
-- Maxillofacial Bone Anatomy
-- Mandibular Anatomy
-- Maxillary Anatomy
-- Orbital Anatomy
-- Neurovascular Anatomy
-- Trigeminal Nerve Branches
-- Facial Nerve Anatomy
-- Fascial Planes and Spaces
-- Vascular Supply of Face
-- Muscles of Mastication
-- *...and 242 more*
-
-### Component 2 (1 concepts)
-
-- Ultrasound in OMS
-
-### Component 3 (1 concepts)
-
-- Injectable Therapies
-
-### Component 4 (1 concepts)
-
-- Piezoelectric Surgery
-
-### Component 5 (3 concepts)
-
-- OMSVision EHR
-- Referral Management
-- NLP Clinical Documenting
-
-### Component 6 (1 concepts)
-
-- DSN Cloud Software
-
-### Component 7 (1 concepts)
-
-- WinOMS System
-
-### Component 8 (2 concepts)
-
-- OSHA Compliance
-- Infection Control
-
-### Component 9 (1 concepts)
-
-- HIPAA Compliance
-
-### Component 10 (3 concepts)
-
-- ABOMS Certification
-- ABOMS MOC Requirements
-- CE Planning Strategy
-
-### Component 11 (4 concepts)
-
-- Evidence-Based Practice
-- Literature Evaluation
-- Journal Club Method
-- Academic Mentorship
+✅ All concepts are connected in a single graph.
 
 ## Indegree Analysis
 
@@ -167,31 +100,35 @@ Top 10 concepts that are prerequisites for the most other concepts:
 | Rank | Concept ID | Concept Label | Indegree |
 |------|-----------|---------------|----------|
 | 1 | 16 | Surgical Approaches | 22 |
-| 2 | 1 | Maxillofacial Bone Anatomy | 15 |
-| 3 | 92 | Bone Graft Types | 13 |
-| 4 | 2 | Mandibular Anatomy | 11 |
-| 5 | 134 | Virtual Surgical Planning | 11 |
-| 6 | 209 | Navigation Principles | 10 |
-| 7 | 227 | CPT Code System | 10 |
-| 8 | 3 | Maxillary Anatomy | 9 |
-| 9 | 27 | CBCT Interpretation | 9 |
-| 10 | 135 | LeFort I Osteotomy | 9 |
+| 2 | 1 | Maxillofacial Bone Anatomy | 16 |
+| 3 | 227 | CPT Code System | 14 |
+| 4 | 92 | Bone Graft Types | 13 |
+| 5 | 2 | Mandibular Anatomy | 11 |
+| 6 | 134 | Virtual Surgical Planning | 11 |
+| 7 | 209 | Navigation Principles | 10 |
+| 8 | 236 | Practice Financial KPIs | 10 |
+| 9 | 3 | Maxillary Anatomy | 9 |
+| 10 | 5 | Neurovascular Anatomy | 9 |
 
 ## Outdegree Distribution
 
 | Dependencies | Number of Concepts |
 |--------------|--------------------|
-| 0 | 29 |
-| 1 | 71 |
-| 2 | 129 |
-| 3 | 37 |
-| 4 | 3 |
-| 5 | 1 |
+| 0 | 17 |
+| 1 | 65 |
+| 2 | 95 |
+| 3 | 60 |
+| 4 | 17 |
+| 5 | 10 |
+| 6 | 3 |
+| 7 | 1 |
+| 12 | 1 |
+| 13 | 1 |
 
 ## Recommendations
 
-- ⚠️ **Connect disconnected components**: Add dependencies to link separate subgraphs
-- ⚠️ **Many orphaned nodes** (141): Consider if these should be prerequisites for advanced concepts
+- ⚠️ **Many orphaned nodes** (55): Consider if these should be prerequisites for advanced concepts
+- ℹ️ **Long dependency chains** (16): Ensure students can follow extended learning paths
 
 ---
 
