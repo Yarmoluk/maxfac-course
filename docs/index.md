@@ -4,25 +4,25 @@ hide:
   - toc
 ---
 
-<div style="text-align: center; margin: 1.5em 0 0.5em;">
+<div class="maxfac-hero" markdown>
 
-# Modern Oral & Maxillofacial Surgery
+# Modern Oral &<br>Maxillofacial Surgery
 
-<p style="font-size: 1.15rem; color: var(--maxfac-text-secondary); max-width: 640px; margin: 0 auto 1em; line-height: 1.6;">
 An intelligent clinical reference for the full-scope OMS practitioner.
-</p>
+{.maxfac-hero__subtitle}
 
-<p style="font-size: 0.95rem; font-weight: 600; color: var(--md-primary-fg-color); margin-bottom: 1.5em;">
 Aligned to AAOMS Parameters of Care 2023
-</p>
+{.maxfac-hero__badge}
 
-**270 Concepts** &nbsp; | &nbsp; **20 Chapters** &nbsp; | &nbsp; **40+ Glossary Terms** &nbsp; | &nbsp; **AI-Powered Chatbot**
+<div class="maxfac-stats" markdown>
+
+:material-graph-outline: **270** Concepts | :material-book-open-variant: **20** Chapters | :material-file-document-outline: **40+** Glossary Terms | :material-robot-outline: **AI** Chatbot
+
+</div>
 
 </div>
 
 ---
-
-## Quick Access
 
 <div class="grid cards" markdown>
 
@@ -30,108 +30,106 @@ Aligned to AAOMS Parameters of Care 2023
 
     ---
 
-    Natural language queries with sourced answers
+    Ask any clinical, coding, or practice question -- get sourced answers instantly.
 
-    [:octicons-arrow-right-24: Launch Bot](https://maxfac-course-yyeabx7ybbcamaetqp3bmz.streamlit.app)
+    [:octicons-arrow-right-24: Launch Bot](https://maxfac-course-yyeabx7ybbcamaetqp3bmz.streamlit.app){.md-button .md-button--primary}
 
 -   :material-book-open-variant:{ .lg .middle } **Browse Chapters**
 
     ---
 
-    20 chapters across 6 clinical areas
+    20 chapters across 6 clinical domains, from anatomy to AI frontiers.
 
-    [:octicons-arrow-right-24: Chapter 1](chapters/01/index.md)
+    [:octicons-arrow-right-24: Start Reading](chapters/01/index.md)
 
 -   :material-graph-outline:{ .lg .middle } **Learning Graph**
 
     ---
 
-    Interactive visualization of 270 concepts
+    270 interconnected concepts with validated prerequisite chains.
 
-    [:octicons-arrow-right-24: View Graph](learning-graph/index.md)
+    [:octicons-arrow-right-24: Explore Graph](learning-graph/index.md)
 
--   :material-magnify:{ .lg .middle } **Glossary & Search**
+-   :material-magnify:{ .lg .middle } **Glossary**
 
     ---
 
-    Instant lookup of clinical terms
+    ISO 11179-compliant definitions for every clinical term.
 
-    [:octicons-arrow-right-24: Browse Glossary](glossary/index.md)
+    [:octicons-arrow-right-24: Browse Terms](glossary/index.md)
 
 </div>
 
 ---
 
-## Clinical Areas
+## Six Clinical Domains
 
 <div class="grid cards" markdown>
 
--   **Part I: Clinical Foundations**
+-   :material-medical-bag:{ .lg .middle } **Clinical Foundations**
 
     ---
 
-    Anatomy, imaging, anesthesia, pharmacology
+    Surgical anatomy, imaging, anesthesia, pharmacology
 
-    [:octicons-arrow-right-24: Chapters 1--4](chapters/01/index.md)
+    [:octicons-arrow-right-24: Part I](chapters/01/index.md)
 
--   **Part II: Core Procedures**
+-   :material-scalpel:{ .lg .middle } **Core Procedures**
 
     ---
 
     Dentoalveolar, implants, pathology, trauma, orthognathic, TMJ
 
-    [:octicons-arrow-right-24: Chapters 5--10](chapters/05/index.md)
+    [:octicons-arrow-right-24: Part II](chapters/05/index.md)
 
--   **Part III: Advanced Clinical**
+-   :material-hospital-building:{ .lg .middle } **Advanced Clinical**
 
     ---
 
-    Craniofacial, cosmetic, sleep apnea
+    Craniofacial, cosmetic, obstructive sleep apnea
 
-    [:octicons-arrow-right-24: Chapters 11--13](chapters/11/index.md)
+    [:octicons-arrow-right-24: Part III](chapters/11/index.md)
 
--   **Part IV: Surgical Technology**
+-   :material-robot-industrial:{ .lg .middle } **Surgical Technology**
 
     ---
 
     Robotics, navigation, 3D printing, virtual surgical planning
 
-    [:octicons-arrow-right-24: Chapters 14--16](chapters/14/index.md)
+    [:octicons-arrow-right-24: Part IV](chapters/14/index.md)
 
--   **Part V: Practice Operations**
-
-    ---
-
-    Billing, coding, compliance, EHR systems
-
-    [:octicons-arrow-right-24: Chapters 17--19](chapters/17/index.md)
-
--   **Part VI: Frontiers**
+-   :material-chart-line:{ .lg .middle } **Practice Operations**
 
     ---
 
-    Regenerative medicine, AI applications, stem cells
+    CPT/CDT coding, billing, compliance, EHR systems
 
-    [:octicons-arrow-right-24: Chapter 20](chapters/20/index.md)
+    [:octicons-arrow-right-24: Part V](chapters/17/index.md)
+
+-   :material-flask:{ .lg .middle } **Frontiers**
+
+    ---
+
+    Regenerative medicine, AI diagnostics, stem cells, telemedicine
+
+    [:octicons-arrow-right-24: Part VI](chapters/20/index.md)
 
 </div>
 
 ---
 
-## Why This Reference
+<div class="maxfac-value-props" markdown>
 
-:material-check-circle-outline: **Source-verified** -- every answer cites AAOMS ParCare, CPT/CDT codes, peer-reviewed journals
+:material-shield-check-outline: **Source-verified** -- every answer cites AAOMS ParCare, CPT/CDT codes, peer-reviewed journals
 
 :material-cellphone: **Mobile-first** -- built for the clinician between cases
 
-:material-head-lightbulb-outline: **AI-powered** -- natural language clinical queries with structured answers
+:material-head-lightbulb-outline: **AI-powered** -- natural language queries with structured, cited answers
 
 :material-refresh: **Living reference** -- knowledge graph evolves with new evidence
 
+</div>
+
 ---
 
-<div style="text-align: center; margin: 2em 0 1em;">
-<p style="font-size: 0.85rem; color: #868E96;">
-Built with MkDocs Material. Powered by Claude AI.
-</p>
-</div>
+<p class="maxfac-footer-credit">Built with MkDocs Material. Powered by Claude AI.</p>

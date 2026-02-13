@@ -1530,3 +1530,175 @@ body {
   border-radius: 0 2px 2px 0;
   animation: pulse-teal 2s ease-in-out infinite;
 }
+
+/* ============================================================
+   37. HOME PAGE — Hero, Stats, Value Props
+   ============================================================ */
+
+/* --- Hero container --- */
+.maxfac-hero {
+  text-align: center;
+  padding: 3em 1.5em 2.5em;
+  margin: -1.8em -0.6em 0 -0.6em;
+  background: var(--maxfac-gradient-hero);
+  border-radius: 0 0 var(--maxfac-radius-xl) var(--maxfac-radius-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.maxfac-hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(78, 205, 196, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  animation: hero-glow 8s ease-in-out infinite alternate;
+}
+
+.maxfac-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -8%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(78, 205, 196, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Hero h1 — big, white, no teal underline */
+.maxfac-hero h1 {
+  color: #FFFFFF !important;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.maxfac-hero h1::after {
+  display: none;
+}
+
+/* Hero subtitle */
+.maxfac-hero .maxfac-hero__subtitle,
+.maxfac-hero p.maxfac-hero__subtitle {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 1.1rem !important;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto 0.8em;
+  position: relative;
+  z-index: 1;
+}
+
+/* AAOMS badge */
+.maxfac-hero .maxfac-hero__badge,
+.maxfac-hero p.maxfac-hero__badge {
+  display: inline-block;
+  color: var(--maxfac-teal) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4em 1.2em;
+  border: 1px solid rgba(78, 205, 196, 0.35);
+  border-radius: 100px;
+  background: rgba(78, 205, 196, 0.08);
+  margin-bottom: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+
+/* Stats row */
+.maxfac-hero .maxfac-stats,
+.maxfac-hero .maxfac-stats p {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.82rem !important;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+.maxfac-hero .maxfac-stats strong {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* --- Value props section --- */
+.maxfac-value-props {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.maxfac-value-props p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin-bottom: 0.8em;
+  padding-left: 0.2em;
+}
+
+/* --- Footer credit --- */
+.maxfac-footer-credit {
+  text-align: center;
+  font-size: 0.78rem !important;
+  color: var(--maxfac-text-tertiary) !important;
+  margin: 1em 0 0;
+  letter-spacing: 0.01em;
+}
+
+/* --- Mobile hero adjustments --- */
+@media screen and (max-width: 76.1875em) {
+  .maxfac-hero {
+    padding: 2.5em 1.2em 2em;
+    margin: -1.8em -1.2em 0 -1.2em;
+  }
+
+  .maxfac-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .maxfac-hero .maxfac-hero__subtitle,
+  .maxfac-hero p.maxfac-hero__subtitle {
+    font-size: 0.95rem !important;
+  }
+
+  .maxfac-hero .maxfac-stats,
+  .maxfac-hero .maxfac-stats p {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .maxfac-hero {
+    padding: 2em 1em 1.5em;
+  }
+
+  .maxfac-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .maxfac-hero .maxfac-hero__subtitle,
+  .maxfac-hero p.maxfac-hero__subtitle {
+    font-size: 0.88rem !important;
+  }
+
+  .maxfac-hero .maxfac-hero__badge,
+  .maxfac-hero p.maxfac-hero__badge {
+    font-size: 0.7rem !important;
+  }
+
+  .maxfac-hero .maxfac-stats,
+  .maxfac-hero .maxfac-stats p {
+    font-size: 0.7rem !important;
+  }
+}
