@@ -1,0 +1,3796 @@
+{
+  "metadata": {
+    "title": "Learning Graph",
+    "description": "Learning graph with 270 concepts generated from CSV",
+    "creator": "CSV to JSON Converter",
+    "date": "2026-02-13",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {},
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Maxillofacial Bone Anatomy",
+      "group": "ANAT",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Mandibular Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 3,
+      "label": "Maxillary Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 4,
+      "label": "Orbital Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 5,
+      "label": "Neurovascular Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 6,
+      "label": "Trigeminal Nerve Branches",
+      "group": "ANAT"
+    },
+    {
+      "id": 7,
+      "label": "Facial Nerve Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 8,
+      "label": "Fascial Planes and Spaces",
+      "group": "ANAT"
+    },
+    {
+      "id": 9,
+      "label": "Vascular Supply of Face",
+      "group": "ANAT"
+    },
+    {
+      "id": 10,
+      "label": "Muscles of Mastication",
+      "group": "ANAT"
+    },
+    {
+      "id": 11,
+      "label": "TMJ Functional Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 12,
+      "label": "Salivary Gland Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 13,
+      "label": "Nasal and Sinus Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 14,
+      "label": "Dental Occlusion",
+      "group": "ANAT"
+    },
+    {
+      "id": 15,
+      "label": "Cephalometric Landmarks",
+      "group": "ANAT"
+    },
+    {
+      "id": 16,
+      "label": "Surgical Approaches",
+      "group": "ANAT"
+    },
+    {
+      "id": 17,
+      "label": "Danger Zones in Surgery",
+      "group": "ANAT"
+    },
+    {
+      "id": 18,
+      "label": "Flap Design Principles",
+      "group": "ANAT"
+    },
+    {
+      "id": 19,
+      "label": "Wound Healing Biology",
+      "group": "ANAT",
+      "shape": "box"
+    },
+    {
+      "id": 20,
+      "label": "Bone Healing Physiology",
+      "group": "ANAT"
+    },
+    {
+      "id": 21,
+      "label": "Osseointegration",
+      "group": "ANAT"
+    },
+    {
+      "id": 22,
+      "label": "Biomechanics of Fixation",
+      "group": "ANAT"
+    },
+    {
+      "id": 23,
+      "label": "Tissue Biomechanics",
+      "group": "ANAT"
+    },
+    {
+      "id": 24,
+      "label": "Pediatric Craniofacial Growth",
+      "group": "ANAT"
+    },
+    {
+      "id": 25,
+      "label": "Airway Anatomy",
+      "group": "ANAT"
+    },
+    {
+      "id": 26,
+      "label": "CBCT Principles",
+      "group": "IMG",
+      "shape": "box"
+    },
+    {
+      "id": 27,
+      "label": "CBCT Interpretation",
+      "group": "IMG"
+    },
+    {
+      "id": 28,
+      "label": "Medical CT Protocols",
+      "group": "IMG"
+    },
+    {
+      "id": 29,
+      "label": "MRI in OMS",
+      "group": "IMG",
+      "shape": "box"
+    },
+    {
+      "id": 30,
+      "label": "Panoramic Radiography",
+      "group": "IMG",
+      "shape": "box"
+    },
+    {
+      "id": 31,
+      "label": "Cephalometric Analysis",
+      "group": "IMG"
+    },
+    {
+      "id": 32,
+      "label": "DICOM Workflow",
+      "group": "IMG"
+    },
+    {
+      "id": 33,
+      "label": "3D Reconstruction",
+      "group": "IMG"
+    },
+    {
+      "id": 34,
+      "label": "Radiation Safety",
+      "group": "IMG"
+    },
+    {
+      "id": 35,
+      "label": "AI Image Segmentation",
+      "group": "IMG"
+    },
+    {
+      "id": 36,
+      "label": "Pathology on Imaging",
+      "group": "IMG"
+    },
+    {
+      "id": 37,
+      "label": "Fracture Classification",
+      "group": "IMG"
+    },
+    {
+      "id": 38,
+      "label": "Tumor Staging Imaging",
+      "group": "IMG"
+    },
+    {
+      "id": 39,
+      "label": "Implant Site Assessment",
+      "group": "IMG"
+    },
+    {
+      "id": 40,
+      "label": "TMJ Imaging Protocols",
+      "group": "IMG"
+    },
+    {
+      "id": 41,
+      "label": "Ultrasound in OMS",
+      "group": "IMG"
+    },
+    {
+      "id": 42,
+      "label": "Intraoperative Imaging",
+      "group": "IMG"
+    },
+    {
+      "id": 43,
+      "label": "Image-Guided Planning",
+      "group": "IMG"
+    },
+    {
+      "id": 44,
+      "label": "Radiographic Diagnosis",
+      "group": "IMG"
+    },
+    {
+      "id": 45,
+      "label": "Contrast-Enhanced CT",
+      "group": "IMG"
+    },
+    {
+      "id": 46,
+      "label": "Local Anesthesia",
+      "group": "ANES"
+    },
+    {
+      "id": 47,
+      "label": "Nerve Block Techniques",
+      "group": "ANES"
+    },
+    {
+      "id": 48,
+      "label": "IV Sedation Protocols",
+      "group": "ANES"
+    },
+    {
+      "id": 49,
+      "label": "General Anesthesia in OMS",
+      "group": "ANES"
+    },
+    {
+      "id": 50,
+      "label": "Airway Management",
+      "group": "ANES"
+    },
+    {
+      "id": 51,
+      "label": "Patient Monitoring Standards",
+      "group": "ANES"
+    },
+    {
+      "id": 52,
+      "label": "Emergency Protocols",
+      "group": "ANES"
+    },
+    {
+      "id": 53,
+      "label": "Anesthesia Permit Reqs",
+      "group": "ANES"
+    },
+    {
+      "id": 54,
+      "label": "Pediatric Sedation",
+      "group": "ANES"
+    },
+    {
+      "id": 55,
+      "label": "Analgesic Pharmacology",
+      "group": "PHARM",
+      "shape": "box"
+    },
+    {
+      "id": 56,
+      "label": "Opioid Stewardship",
+      "group": "PHARM"
+    },
+    {
+      "id": 57,
+      "label": "Antibiotic Prophylaxis",
+      "group": "PHARM",
+      "shape": "box"
+    },
+    {
+      "id": 58,
+      "label": "Antibiotic Therapy",
+      "group": "PHARM"
+    },
+    {
+      "id": 59,
+      "label": "Corticosteroid Use",
+      "group": "PHARM",
+      "shape": "box"
+    },
+    {
+      "id": 60,
+      "label": "Hemostatic Agents",
+      "group": "PHARM",
+      "shape": "box"
+    },
+    {
+      "id": 61,
+      "label": "Drug Interactions",
+      "group": "PHARM"
+    },
+    {
+      "id": 62,
+      "label": "Anticoagulant Management",
+      "group": "PHARM"
+    },
+    {
+      "id": 63,
+      "label": "ERAS Protocols",
+      "group": "PHARM"
+    },
+    {
+      "id": 64,
+      "label": "CDC Opioid Guidelines",
+      "group": "PHARM"
+    },
+    {
+      "id": 65,
+      "label": "Pharmacogenomics",
+      "group": "PHARM"
+    },
+    {
+      "id": 66,
+      "label": "Simple Extraction",
+      "group": "DENT"
+    },
+    {
+      "id": 67,
+      "label": "Surgical Extraction",
+      "group": "DENT"
+    },
+    {
+      "id": 68,
+      "label": "Impacted Third Molars",
+      "group": "DENT"
+    },
+    {
+      "id": 69,
+      "label": "Impaction Classification",
+      "group": "DENT"
+    },
+    {
+      "id": 70,
+      "label": "Nerve Injury Management",
+      "group": "DENT"
+    },
+    {
+      "id": 71,
+      "label": "Inferior Alveolar Nerve",
+      "group": "DENT"
+    },
+    {
+      "id": 72,
+      "label": "Lingual Nerve Injury",
+      "group": "DENT"
+    },
+    {
+      "id": 73,
+      "label": "Dry Socket Management",
+      "group": "DENT"
+    },
+    {
+      "id": 74,
+      "label": "OAC/OAF Management",
+      "group": "DENT"
+    },
+    {
+      "id": 75,
+      "label": "Alveoloplasty",
+      "group": "DENT"
+    },
+    {
+      "id": 76,
+      "label": "Pre-Prosthetic Surgery",
+      "group": "DENT"
+    },
+    {
+      "id": 77,
+      "label": "Tori and Exostoses",
+      "group": "DENT"
+    },
+    {
+      "id": 78,
+      "label": "Surgical Crown Lengthening",
+      "group": "DENT"
+    },
+    {
+      "id": 79,
+      "label": "Exposure for Orthodontics",
+      "group": "DENT"
+    },
+    {
+      "id": 80,
+      "label": "Root Tip Retrieval",
+      "group": "DENT"
+    },
+    {
+      "id": 81,
+      "label": "Coronectomy",
+      "group": "DENT"
+    },
+    {
+      "id": 82,
+      "label": "Dentoalveolar Infection",
+      "group": "DENT"
+    },
+    {
+      "id": 83,
+      "label": "Ludwig Angina",
+      "group": "DENT"
+    },
+    {
+      "id": 84,
+      "label": "Necrotizing Fasciitis",
+      "group": "DENT"
+    },
+    {
+      "id": 85,
+      "label": "Odontogenic Space Infection",
+      "group": "DENT"
+    },
+    {
+      "id": 86,
+      "label": "Implant Design and Systems",
+      "group": "IMPL"
+    },
+    {
+      "id": 87,
+      "label": "Treatment Planning Implants",
+      "group": "IMPL"
+    },
+    {
+      "id": 88,
+      "label": "Conventional Placement",
+      "group": "IMPL"
+    },
+    {
+      "id": 89,
+      "label": "Guided Implant Surgery",
+      "group": "IMPL"
+    },
+    {
+      "id": 90,
+      "label": "Robotic Implant Placement",
+      "group": "IMPL"
+    },
+    {
+      "id": 91,
+      "label": "Immediate Implant Placement",
+      "group": "IMPL"
+    },
+    {
+      "id": 92,
+      "label": "Bone Graft Types",
+      "group": "IMPL"
+    },
+    {
+      "id": 93,
+      "label": "Autogenous Bone Harvest",
+      "group": "IMPL"
+    },
+    {
+      "id": 94,
+      "label": "Allograft Materials",
+      "group": "IMPL"
+    },
+    {
+      "id": 95,
+      "label": "Xenograft Materials",
+      "group": "IMPL"
+    },
+    {
+      "id": 96,
+      "label": "Alloplastic Grafts",
+      "group": "IMPL"
+    },
+    {
+      "id": 97,
+      "label": "Sinus Augmentation",
+      "group": "IMPL"
+    },
+    {
+      "id": 98,
+      "label": "Ridge Augmentation",
+      "group": "IMPL"
+    },
+    {
+      "id": 99,
+      "label": "GBR Membrane Techniques",
+      "group": "IMPL"
+    },
+    {
+      "id": 100,
+      "label": "Zygomatic Implants",
+      "group": "IMPL"
+    },
+    {
+      "id": 101,
+      "label": "Pterygoid Implants",
+      "group": "IMPL"
+    },
+    {
+      "id": 102,
+      "label": "All-on-X Protocols",
+      "group": "IMPL"
+    },
+    {
+      "id": 103,
+      "label": "Peri-Implantitis",
+      "group": "IMPL"
+    },
+    {
+      "id": 104,
+      "label": "Implant Loading Protocols",
+      "group": "IMPL"
+    },
+    {
+      "id": 105,
+      "label": "Implant Complications",
+      "group": "IMPL"
+    },
+    {
+      "id": 106,
+      "label": "Implant CDT Coding",
+      "group": "IMPL"
+    },
+    {
+      "id": 107,
+      "label": "Implant CPT Coding",
+      "group": "IMPL"
+    },
+    {
+      "id": 108,
+      "label": "BMP-2 in Grafting",
+      "group": "IMPL"
+    },
+    {
+      "id": 109,
+      "label": "PRF and PRP Protocols",
+      "group": "IMPL"
+    },
+    {
+      "id": 110,
+      "label": "Socket Preservation",
+      "group": "IMPL"
+    },
+    {
+      "id": 111,
+      "label": "Trauma Assessment",
+      "group": "TRAU",
+      "shape": "box"
+    },
+    {
+      "id": 112,
+      "label": "ATLS for OMS",
+      "group": "TRAU"
+    },
+    {
+      "id": 113,
+      "label": "Mandible Fracture Types",
+      "group": "TRAU"
+    },
+    {
+      "id": 114,
+      "label": "Mandibular Angle Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 115,
+      "label": "Condylar Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 116,
+      "label": "Symphysis Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 117,
+      "label": "Midface Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 118,
+      "label": "LeFort Fracture Types",
+      "group": "TRAU"
+    },
+    {
+      "id": 119,
+      "label": "ZMC Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 120,
+      "label": "Orbital Floor Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 121,
+      "label": "NOE Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 122,
+      "label": "Panfacial Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 123,
+      "label": "Soft Tissue Injury",
+      "group": "TRAU"
+    },
+    {
+      "id": 124,
+      "label": "Pediatric Facial Fracture",
+      "group": "TRAU"
+    },
+    {
+      "id": 125,
+      "label": "Ballistic Facial Injury",
+      "group": "TRAU"
+    },
+    {
+      "id": 126,
+      "label": "Rigid Fixation Principles",
+      "group": "TRAU"
+    },
+    {
+      "id": 127,
+      "label": "Plate and Screw Systems",
+      "group": "TRAU"
+    },
+    {
+      "id": 128,
+      "label": "IMF Techniques",
+      "group": "TRAU"
+    },
+    {
+      "id": 129,
+      "label": "Trauma CPT Coding",
+      "group": "TRAU"
+    },
+    {
+      "id": 130,
+      "label": "Nav-Guided Trauma Repair",
+      "group": "TRAU"
+    },
+    {
+      "id": 131,
+      "label": "Dentofacial Diagnosis",
+      "group": "ORTH"
+    },
+    {
+      "id": 132,
+      "label": "Orthodontic Coordination",
+      "group": "ORTH"
+    },
+    {
+      "id": 133,
+      "label": "Model Surgery",
+      "group": "ORTH"
+    },
+    {
+      "id": 134,
+      "label": "Virtual Surgical Planning",
+      "group": "ORTH"
+    },
+    {
+      "id": 135,
+      "label": "LeFort I Osteotomy",
+      "group": "ORTH"
+    },
+    {
+      "id": 136,
+      "label": "BSSO Technique",
+      "group": "ORTH"
+    },
+    {
+      "id": 137,
+      "label": "Genioplasty",
+      "group": "ORTH"
+    },
+    {
+      "id": 138,
+      "label": "Segmental Osteotomy",
+      "group": "ORTH"
+    },
+    {
+      "id": 139,
+      "label": "Distraction Osteogenesis",
+      "group": "ORTH"
+    },
+    {
+      "id": 140,
+      "label": "Surgery-First Approach",
+      "group": "ORTH"
+    },
+    {
+      "id": 141,
+      "label": "IPS CaseDesigner",
+      "group": "ORTH"
+    },
+    {
+      "id": 142,
+      "label": "Materialise ProPlan CMF",
+      "group": "ORTH"
+    },
+    {
+      "id": 143,
+      "label": "Custom Surgical Splints",
+      "group": "ORTH"
+    },
+    {
+      "id": 144,
+      "label": "Orthognathic Stability",
+      "group": "ORTH"
+    },
+    {
+      "id": 145,
+      "label": "Orthognathic Complications",
+      "group": "ORTH"
+    },
+    {
+      "id": 146,
+      "label": "Class II Correction",
+      "group": "ORTH"
+    },
+    {
+      "id": 147,
+      "label": "Class III Correction",
+      "group": "ORTH"
+    },
+    {
+      "id": 148,
+      "label": "Facial Asymmetry Correct",
+      "group": "ORTH"
+    },
+    {
+      "id": 149,
+      "label": "Orthognathic CPT Coding",
+      "group": "ORTH"
+    },
+    {
+      "id": 150,
+      "label": "Bimaxillary Surgery",
+      "group": "ORTH"
+    },
+    {
+      "id": 151,
+      "label": "TMJ Pathophysiology",
+      "group": "TMJ"
+    },
+    {
+      "id": 152,
+      "label": "TMD Diagnosis",
+      "group": "TMJ"
+    },
+    {
+      "id": 153,
+      "label": "Conservative TMJ Mgmt",
+      "group": "TMJ"
+    },
+    {
+      "id": 154,
+      "label": "TMJ Arthrocentesis",
+      "group": "TMJ"
+    },
+    {
+      "id": 155,
+      "label": "TMJ Arthroscopy",
+      "group": "TMJ"
+    },
+    {
+      "id": 156,
+      "label": "Disc Repositioning",
+      "group": "TMJ"
+    },
+    {
+      "id": 157,
+      "label": "Discectomy",
+      "group": "TMJ"
+    },
+    {
+      "id": 158,
+      "label": "Eminectomy",
+      "group": "TMJ"
+    },
+    {
+      "id": 159,
+      "label": "Condylectomy",
+      "group": "TMJ"
+    },
+    {
+      "id": 160,
+      "label": "Total Joint Replacement",
+      "group": "TMJ"
+    },
+    {
+      "id": 161,
+      "label": "Costochondral Graft",
+      "group": "TMJ"
+    },
+    {
+      "id": 162,
+      "label": "Patient-Specific TMJ",
+      "group": "TMJ"
+    },
+    {
+      "id": 163,
+      "label": "TMJ Ankylosis Surgery",
+      "group": "TMJ"
+    },
+    {
+      "id": 164,
+      "label": "TMJ CPT Coding",
+      "group": "TMJ"
+    },
+    {
+      "id": 165,
+      "label": "Nav-Guided TMJ Surgery",
+      "group": "TMJ"
+    },
+    {
+      "id": 166,
+      "label": "Biopsy Techniques",
+      "group": "PATH"
+    },
+    {
+      "id": 167,
+      "label": "Odontogenic Cysts",
+      "group": "PATH"
+    },
+    {
+      "id": 168,
+      "label": "Non-Odontogenic Cysts",
+      "group": "PATH"
+    },
+    {
+      "id": 169,
+      "label": "Ameloblastoma",
+      "group": "PATH"
+    },
+    {
+      "id": 170,
+      "label": "Odontogenic Keratocyst",
+      "group": "PATH"
+    },
+    {
+      "id": 171,
+      "label": "Benign Jaw Tumors",
+      "group": "PATH"
+    },
+    {
+      "id": 172,
+      "label": "SCC of Oral Cavity",
+      "group": "PATH"
+    },
+    {
+      "id": 173,
+      "label": "Tumor Staging TNM",
+      "group": "PATH"
+    },
+    {
+      "id": 174,
+      "label": "Surgical Margins",
+      "group": "PATH"
+    },
+    {
+      "id": 175,
+      "label": "Neck Dissection",
+      "group": "PATH"
+    },
+    {
+      "id": 176,
+      "label": "Sentinel Lymph Node",
+      "group": "PATH"
+    },
+    {
+      "id": 177,
+      "label": "Free Flap Reconstruction",
+      "group": "PATH"
+    },
+    {
+      "id": 178,
+      "label": "Fibula Free Flap",
+      "group": "PATH"
+    },
+    {
+      "id": 179,
+      "label": "Microvascular Technique",
+      "group": "PATH"
+    },
+    {
+      "id": 180,
+      "label": "Radiation Sequelae",
+      "group": "PATH"
+    },
+    {
+      "id": 181,
+      "label": "Osteoradionecrosis",
+      "group": "PATH"
+    },
+    {
+      "id": 182,
+      "label": "MRONJ Management",
+      "group": "PATH"
+    },
+    {
+      "id": 183,
+      "label": "Tumor Board Process",
+      "group": "PATH"
+    },
+    {
+      "id": 184,
+      "label": "Chemotherapy Protocols",
+      "group": "PATH"
+    },
+    {
+      "id": 185,
+      "label": "Immunotherapy in H&N",
+      "group": "PATH"
+    },
+    {
+      "id": 186,
+      "label": "Cleft Lip Repair",
+      "group": "ADVC"
+    },
+    {
+      "id": 187,
+      "label": "Cleft Palate Repair",
+      "group": "ADVC"
+    },
+    {
+      "id": 188,
+      "label": "Alveolar Cleft Grafting",
+      "group": "ADVC"
+    },
+    {
+      "id": 189,
+      "label": "Velopharyngeal Insuffic",
+      "group": "ADVC"
+    },
+    {
+      "id": 190,
+      "label": "Craniosynostosis",
+      "group": "ADVC"
+    },
+    {
+      "id": 191,
+      "label": "Hemifacial Microsomia",
+      "group": "ADVC"
+    },
+    {
+      "id": 192,
+      "label": "Rhinoplasty",
+      "group": "ADVC"
+    },
+    {
+      "id": 193,
+      "label": "Blepharoplasty",
+      "group": "ADVC"
+    },
+    {
+      "id": 194,
+      "label": "Rhytidectomy",
+      "group": "ADVC"
+    },
+    {
+      "id": 195,
+      "label": "Injectable Therapies",
+      "group": "ADVC"
+    },
+    {
+      "id": 196,
+      "label": "OSA Pathophysiology",
+      "group": "ADVC"
+    },
+    {
+      "id": 197,
+      "label": "MMA for Sleep Apnea",
+      "group": "ADVC"
+    },
+    {
+      "id": 198,
+      "label": "DOME Procedure",
+      "group": "ADVC"
+    },
+    {
+      "id": 199,
+      "label": "Hypoglossal Stimulation",
+      "group": "ADVC"
+    },
+    {
+      "id": 200,
+      "label": "SARPE",
+      "group": "ADVC"
+    },
+    {
+      "id": 201,
+      "label": "Surgical Robotics Princ",
+      "group": "TECH",
+      "shape": "box"
+    },
+    {
+      "id": 202,
+      "label": "Yomi Robotic System",
+      "group": "TECH"
+    },
+    {
+      "id": 203,
+      "label": "Yomi S and YomiPlan AI",
+      "group": "TECH"
+    },
+    {
+      "id": 204,
+      "label": "da Vinci in TORS",
+      "group": "TECH"
+    },
+    {
+      "id": 205,
+      "label": "Hugo RAS Platform",
+      "group": "TECH"
+    },
+    {
+      "id": 206,
+      "label": "Versius System",
+      "group": "TECH"
+    },
+    {
+      "id": 207,
+      "label": "Robotic Credentialing",
+      "group": "TECH"
+    },
+    {
+      "id": 208,
+      "label": "Robotic ROI Analysis",
+      "group": "TECH"
+    },
+    {
+      "id": 209,
+      "label": "Navigation Principles",
+      "group": "TECH",
+      "shape": "box"
+    },
+    {
+      "id": 210,
+      "label": "Brainlab Kick System",
+      "group": "TECH"
+    },
+    {
+      "id": 211,
+      "label": "Stryker Navigation",
+      "group": "TECH"
+    },
+    {
+      "id": 212,
+      "label": "KLS Martin IPS Nav",
+      "group": "TECH"
+    },
+    {
+      "id": 213,
+      "label": "X-Guide Navigation",
+      "group": "TECH"
+    },
+    {
+      "id": 214,
+      "label": "Navident System",
+      "group": "TECH"
+    },
+    {
+      "id": 215,
+      "label": "Surface Registration",
+      "group": "TECH"
+    },
+    {
+      "id": 216,
+      "label": "Fiducial Registration",
+      "group": "TECH"
+    },
+    {
+      "id": 217,
+      "label": "AR in CMF Surgery",
+      "group": "TECH"
+    },
+    {
+      "id": 218,
+      "label": "Mixed Reality Planning",
+      "group": "TECH"
+    },
+    {
+      "id": 219,
+      "label": "3D Printing Technology",
+      "group": "TECH",
+      "shape": "box"
+    },
+    {
+      "id": 220,
+      "label": "SLA Printing",
+      "group": "TECH"
+    },
+    {
+      "id": 221,
+      "label": "In-House 3D Printing",
+      "group": "TECH"
+    },
+    {
+      "id": 222,
+      "label": "Patient-Specific Implant",
+      "group": "TECH"
+    },
+    {
+      "id": 223,
+      "label": "Custom Cutting Guides",
+      "group": "TECH"
+    },
+    {
+      "id": 224,
+      "label": "Bioprinting Frontiers",
+      "group": "TECH"
+    },
+    {
+      "id": 225,
+      "label": "Piezoelectric Surgery",
+      "group": "TECH"
+    },
+    {
+      "id": 226,
+      "label": "CDT Code System",
+      "group": "OPS",
+      "shape": "box"
+    },
+    {
+      "id": 227,
+      "label": "CPT Code System",
+      "group": "OPS",
+      "shape": "box"
+    },
+    {
+      "id": 228,
+      "label": "ICD-10 Coding for OMS",
+      "group": "OPS",
+      "shape": "box"
+    },
+    {
+      "id": 229,
+      "label": "Medical-Dental CrossCode",
+      "group": "OPS"
+    },
+    {
+      "id": 230,
+      "label": "Prior Authorization",
+      "group": "OPS"
+    },
+    {
+      "id": 231,
+      "label": "Insurance Appeals",
+      "group": "OPS"
+    },
+    {
+      "id": 232,
+      "label": "Medicare OMS Guidelines",
+      "group": "OPS"
+    },
+    {
+      "id": 233,
+      "label": "Medicaid Coverage",
+      "group": "OPS"
+    },
+    {
+      "id": 234,
+      "label": "Anesthesia Coding",
+      "group": "OPS"
+    },
+    {
+      "id": 235,
+      "label": "Revenue Cycle Mgmt",
+      "group": "OPS"
+    },
+    {
+      "id": 236,
+      "label": "Practice Financial KPIs",
+      "group": "OPS",
+      "shape": "box"
+    },
+    {
+      "id": 237,
+      "label": "Overhead Management",
+      "group": "OPS"
+    },
+    {
+      "id": 238,
+      "label": "OMSVision EHR",
+      "group": "OPS"
+    },
+    {
+      "id": 239,
+      "label": "DSN Cloud Software",
+      "group": "OPS"
+    },
+    {
+      "id": 240,
+      "label": "WinOMS System",
+      "group": "OPS"
+    },
+    {
+      "id": 241,
+      "label": "Referral Management",
+      "group": "OPS"
+    },
+    {
+      "id": 242,
+      "label": "Staffing and HR",
+      "group": "OPS"
+    },
+    {
+      "id": 243,
+      "label": "OSHA Compliance",
+      "group": "OPS"
+    },
+    {
+      "id": 244,
+      "label": "HIPAA Compliance",
+      "group": "OPS"
+    },
+    {
+      "id": 245,
+      "label": "Infection Control",
+      "group": "OPS"
+    },
+    {
+      "id": 246,
+      "label": "Office Design for OMS",
+      "group": "OPS"
+    },
+    {
+      "id": 247,
+      "label": "Malpractice Risk Mgmt",
+      "group": "OPS"
+    },
+    {
+      "id": 248,
+      "label": "Practice Valuation",
+      "group": "OPS"
+    },
+    {
+      "id": 249,
+      "label": "DSO and PE Landscape",
+      "group": "OPS"
+    },
+    {
+      "id": 250,
+      "label": "No Surprises Act",
+      "group": "OPS"
+    },
+    {
+      "id": 251,
+      "label": "MSC in Bone Regeneration",
+      "group": "FRONT"
+    },
+    {
+      "id": 252,
+      "label": "Dental Pulp Stem Cells",
+      "group": "FRONT"
+    },
+    {
+      "id": 253,
+      "label": "Scaffold-Based Regen",
+      "group": "FRONT"
+    },
+    {
+      "id": 254,
+      "label": "Tissue Engineering",
+      "group": "FRONT"
+    },
+    {
+      "id": 255,
+      "label": "AI CBCT Analysis",
+      "group": "FRONT"
+    },
+    {
+      "id": 256,
+      "label": "AI Pathology Detection",
+      "group": "FRONT"
+    },
+    {
+      "id": 257,
+      "label": "AI Treatment Planning",
+      "group": "FRONT"
+    },
+    {
+      "id": 258,
+      "label": "NLP Clinical Documenting",
+      "group": "FRONT"
+    },
+    {
+      "id": 259,
+      "label": "Telemedicine in OMS",
+      "group": "FRONT"
+    },
+    {
+      "id": 260,
+      "label": "Virtual Consultations",
+      "group": "FRONT"
+    },
+    {
+      "id": 261,
+      "label": "Remote Postop Monitoring",
+      "group": "FRONT"
+    },
+    {
+      "id": 262,
+      "label": "Telehealth Billing",
+      "group": "FRONT"
+    },
+    {
+      "id": 263,
+      "label": "ABOMS Certification",
+      "group": "FRONT"
+    },
+    {
+      "id": 264,
+      "label": "ABOMS MOC Requirements",
+      "group": "FRONT"
+    },
+    {
+      "id": 265,
+      "label": "CE Planning Strategy",
+      "group": "FRONT"
+    },
+    {
+      "id": 266,
+      "label": "Evidence-Based Practice",
+      "group": "FRONT"
+    },
+    {
+      "id": 267,
+      "label": "Literature Evaluation",
+      "group": "FRONT"
+    },
+    {
+      "id": 268,
+      "label": "Journal Club Method",
+      "group": "FRONT"
+    },
+    {
+      "id": 269,
+      "label": "Academic Mentorship",
+      "group": "FRONT"
+    },
+    {
+      "id": 270,
+      "label": "Complete Practice Design",
+      "group": "FRONT"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 9,
+      "to": 5
+    },
+    {
+      "from": 10,
+      "to": 1
+    },
+    {
+      "from": 10,
+      "to": 2
+    },
+    {
+      "from": 11,
+      "to": 2
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 1
+    },
+    {
+      "from": 12,
+      "to": 5
+    },
+    {
+      "from": 13,
+      "to": 3
+    },
+    {
+      "from": 13,
+      "to": 4
+    },
+    {
+      "from": 14,
+      "to": 2
+    },
+    {
+      "from": 14,
+      "to": 3
+    },
+    {
+      "from": 15,
+      "to": 1
+    },
+    {
+      "from": 15,
+      "to": 2
+    },
+    {
+      "from": 15,
+      "to": 3
+    },
+    {
+      "from": 16,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 5
+    },
+    {
+      "from": 16,
+      "to": 8
+    },
+    {
+      "from": 17,
+      "to": 5
+    },
+    {
+      "from": 17,
+      "to": 6
+    },
+    {
+      "from": 17,
+      "to": 7
+    },
+    {
+      "from": 17,
+      "to": 8
+    },
+    {
+      "from": 18,
+      "to": 9
+    },
+    {
+      "from": 18,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 1
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 1
+    },
+    {
+      "from": 22,
+      "to": 20
+    },
+    {
+      "from": 23,
+      "to": 19
+    },
+    {
+      "from": 24,
+      "to": 1
+    },
+    {
+      "from": 24,
+      "to": 2
+    },
+    {
+      "from": 24,
+      "to": 3
+    },
+    {
+      "from": 25,
+      "to": 1
+    },
+    {
+      "from": 25,
+      "to": 13
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 28,
+      "to": 26
+    },
+    {
+      "from": 31,
+      "to": 15
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 26
+    },
+    {
+      "from": 33,
+      "to": 26
+    },
+    {
+      "from": 33,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 26
+    },
+    {
+      "from": 35,
+      "to": 27
+    },
+    {
+      "from": 35,
+      "to": 33
+    },
+    {
+      "from": 36,
+      "to": 27
+    },
+    {
+      "from": 36,
+      "to": 30
+    },
+    {
+      "from": 37,
+      "to": 1
+    },
+    {
+      "from": 37,
+      "to": 27
+    },
+    {
+      "from": 38,
+      "to": 28
+    },
+    {
+      "from": 38,
+      "to": 29
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 45
+    },
+    {
+      "from": 39,
+      "to": 27
+    },
+    {
+      "from": 40,
+      "to": 11
+    },
+    {
+      "from": 40,
+      "to": 27
+    },
+    {
+      "from": 40,
+      "to": 29
+    },
+    {
+      "from": 41,
+      "to": 5
+    },
+    {
+      "from": 41,
+      "to": 26
+    },
+    {
+      "from": 42,
+      "to": 28
+    },
+    {
+      "from": 42,
+      "to": 33
+    },
+    {
+      "from": 42,
+      "to": 34
+    },
+    {
+      "from": 43,
+      "to": 33
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 27
+    },
+    {
+      "from": 44,
+      "to": 30
+    },
+    {
+      "from": 44,
+      "to": 34
+    },
+    {
+      "from": 44,
+      "to": 36
+    },
+    {
+      "from": 45,
+      "to": 28
+    },
+    {
+      "from": 46,
+      "to": 6
+    },
+    {
+      "from": 47,
+      "to": 6
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 46
+    },
+    {
+      "from": 49,
+      "to": 25
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 25
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 51,
+      "to": 48
+    },
+    {
+      "from": 51,
+      "to": 49
+    },
+    {
+      "from": 52,
+      "to": 50
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 49
+    },
+    {
+      "from": 54,
+      "to": 24
+    },
+    {
+      "from": 54,
+      "to": 48
+    },
+    {
+      "from": 56,
+      "to": 55
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 61,
+      "to": 55
+    },
+    {
+      "from": 61,
+      "to": 57
+    },
+    {
+      "from": 61,
+      "to": 59
+    },
+    {
+      "from": 62,
+      "to": 60
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 55
+    },
+    {
+      "from": 63,
+      "to": 56
+    },
+    {
+      "from": 63,
+      "to": 57
+    },
+    {
+      "from": 63,
+      "to": 59
+    },
+    {
+      "from": 63,
+      "to": 266
+    },
+    {
+      "from": 64,
+      "to": 56
+    },
+    {
+      "from": 65,
+      "to": 55
+    },
+    {
+      "from": 65,
+      "to": 61
+    },
+    {
+      "from": 66,
+      "to": 2
+    },
+    {
+      "from": 66,
+      "to": 46
+    },
+    {
+      "from": 66,
+      "to": 62
+    },
+    {
+      "from": 67,
+      "to": 16
+    },
+    {
+      "from": 67,
+      "to": 17
+    },
+    {
+      "from": 67,
+      "to": 62
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 67,
+      "to": 225
+    },
+    {
+      "from": 68,
+      "to": 27
+    },
+    {
+      "from": 68,
+      "to": 47
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 69,
+      "to": 37
+    },
+    {
+      "from": 69,
+      "to": 68
+    },
+    {
+      "from": 70,
+      "to": 6
+    },
+    {
+      "from": 70,
+      "to": 71
+    },
+    {
+      "from": 70,
+      "to": 72
+    },
+    {
+      "from": 70,
+      "to": 81
+    },
+    {
+      "from": 71,
+      "to": 2
+    },
+    {
+      "from": 71,
+      "to": 6
+    },
+    {
+      "from": 72,
+      "to": 6
+    },
+    {
+      "from": 72,
+      "to": 67
+    },
+    {
+      "from": 73,
+      "to": 19
+    },
+    {
+      "from": 73,
+      "to": 23
+    },
+    {
+      "from": 73,
+      "to": 64
+    },
+    {
+      "from": 73,
+      "to": 66
+    },
+    {
+      "from": 74,
+      "to": 13
+    },
+    {
+      "from": 74,
+      "to": 67
+    },
+    {
+      "from": 75,
+      "to": 2
+    },
+    {
+      "from": 75,
+      "to": 66
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 76,
+      "to": 77
+    },
+    {
+      "from": 76,
+      "to": 78
+    },
+    {
+      "from": 77,
+      "to": 1
+    },
+    {
+      "from": 77,
+      "to": 67
+    },
+    {
+      "from": 78,
+      "to": 67
+    },
+    {
+      "from": 79,
+      "to": 16
+    },
+    {
+      "from": 79,
+      "to": 67
+    },
+    {
+      "from": 80,
+      "to": 27
+    },
+    {
+      "from": 80,
+      "to": 67
+    },
+    {
+      "from": 81,
+      "to": 68
+    },
+    {
+      "from": 81,
+      "to": 69
+    },
+    {
+      "from": 81,
+      "to": 71
+    },
+    {
+      "from": 82,
+      "to": 8
+    },
+    {
+      "from": 82,
+      "to": 58
+    },
+    {
+      "from": 82,
+      "to": 245
+    },
+    {
+      "from": 83,
+      "to": 8
+    },
+    {
+      "from": 83,
+      "to": 50
+    },
+    {
+      "from": 83,
+      "to": 52
+    },
+    {
+      "from": 83,
+      "to": 82
+    },
+    {
+      "from": 83,
+      "to": 85
+    },
+    {
+      "from": 84,
+      "to": 8
+    },
+    {
+      "from": 84,
+      "to": 82
+    },
+    {
+      "from": 85,
+      "to": 8
+    },
+    {
+      "from": 85,
+      "to": 16
+    },
+    {
+      "from": 85,
+      "to": 82
+    },
+    {
+      "from": 86,
+      "to": 21
+    },
+    {
+      "from": 87,
+      "to": 39
+    },
+    {
+      "from": 87,
+      "to": 44
+    },
+    {
+      "from": 87,
+      "to": 76
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 46
+    },
+    {
+      "from": 88,
+      "to": 62
+    },
+    {
+      "from": 88,
+      "to": 87
+    },
+    {
+      "from": 88,
+      "to": 245
+    },
+    {
+      "from": 89,
+      "to": 33
+    },
+    {
+      "from": 89,
+      "to": 43
+    },
+    {
+      "from": 89,
+      "to": 87
+    },
+    {
+      "from": 89,
+      "to": 218
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 90,
+      "to": 202
+    },
+    {
+      "from": 91,
+      "to": 88
+    },
+    {
+      "from": 91,
+      "to": 110
+    },
+    {
+      "from": 91,
+      "to": 104
+    },
+    {
+      "from": 92,
+      "to": 20
+    },
+    {
+      "from": 93,
+      "to": 16
+    },
+    {
+      "from": 93,
+      "to": 47
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 93,
+      "to": 109
+    },
+    {
+      "from": 93,
+      "to": 225
+    },
+    {
+      "from": 94,
+      "to": 92
+    },
+    {
+      "from": 95,
+      "to": 92
+    },
+    {
+      "from": 96,
+      "to": 92
+    },
+    {
+      "from": 97,
+      "to": 13
+    },
+    {
+      "from": 97,
+      "to": 74
+    },
+    {
+      "from": 97,
+      "to": 87
+    },
+    {
+      "from": 97,
+      "to": 92
+    },
+    {
+      "from": 97,
+      "to": 94
+    },
+    {
+      "from": 98,
+      "to": 87
+    },
+    {
+      "from": 98,
+      "to": 92
+    },
+    {
+      "from": 98,
+      "to": 95
+    },
+    {
+      "from": 99,
+      "to": 92
+    },
+    {
+      "from": 99,
+      "to": 96
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 4
+    },
+    {
+      "from": 100,
+      "to": 87
+    },
+    {
+      "from": 100,
+      "to": 97
+    },
+    {
+      "from": 101,
+      "to": 3
+    },
+    {
+      "from": 101,
+      "to": 87
+    },
+    {
+      "from": 102,
+      "to": 87
+    },
+    {
+      "from": 102,
+      "to": 88
+    },
+    {
+      "from": 102,
+      "to": 91
+    },
+    {
+      "from": 102,
+      "to": 92
+    },
+    {
+      "from": 102,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 58
+    },
+    {
+      "from": 103,
+      "to": 86
+    },
+    {
+      "from": 104,
+      "to": 88
+    },
+    {
+      "from": 105,
+      "to": 70
+    },
+    {
+      "from": 105,
+      "to": 73
+    },
+    {
+      "from": 105,
+      "to": 80
+    },
+    {
+      "from": 105,
+      "to": 88
+    },
+    {
+      "from": 105,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 105,
+      "to": 182
+    },
+    {
+      "from": 106,
+      "to": 86
+    },
+    {
+      "from": 106,
+      "to": 226
+    },
+    {
+      "from": 107,
+      "to": 86
+    },
+    {
+      "from": 107,
+      "to": 227
+    },
+    {
+      "from": 108,
+      "to": 20
+    },
+    {
+      "from": 108,
+      "to": 92
+    },
+    {
+      "from": 109,
+      "to": 60
+    },
+    {
+      "from": 109,
+      "to": 92
+    },
+    {
+      "from": 110,
+      "to": 66
+    },
+    {
+      "from": 110,
+      "to": 92
+    },
+    {
+      "from": 110,
+      "to": 109
+    },
+    {
+      "from": 112,
+      "to": 50
+    },
+    {
+      "from": 112,
+      "to": 52
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 2
+    },
+    {
+      "from": 113,
+      "to": 37
+    },
+    {
+      "from": 113,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 22
+    },
+    {
+      "from": 114,
+      "to": 113
+    },
+    {
+      "from": 114,
+      "to": 128
+    },
+    {
+      "from": 115,
+      "to": 11
+    },
+    {
+      "from": 115,
+      "to": 113
+    },
+    {
+      "from": 115,
+      "to": 128
+    },
+    {
+      "from": 116,
+      "to": 22
+    },
+    {
+      "from": 116,
+      "to": 113
+    },
+    {
+      "from": 116,
+      "to": 128
+    },
+    {
+      "from": 117,
+      "to": 3
+    },
+    {
+      "from": 117,
+      "to": 37
+    },
+    {
+      "from": 117,
+      "to": 112
+    },
+    {
+      "from": 118,
+      "to": 3
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 4
+    },
+    {
+      "from": 119,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 4
+    },
+    {
+      "from": 120,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 121,
+      "to": 13
+    },
+    {
+      "from": 121,
+      "to": 117
+    },
+    {
+      "from": 122,
+      "to": 16
+    },
+    {
+      "from": 122,
+      "to": 113
+    },
+    {
+      "from": 122,
+      "to": 117
+    },
+    {
+      "from": 122,
+      "to": 118
+    },
+    {
+      "from": 123,
+      "to": 16
+    },
+    {
+      "from": 123,
+      "to": 19
+    },
+    {
+      "from": 123,
+      "to": 23
+    },
+    {
+      "from": 124,
+      "to": 24
+    },
+    {
+      "from": 124,
+      "to": 54
+    },
+    {
+      "from": 124,
+      "to": 113
+    },
+    {
+      "from": 124,
+      "to": 117
+    },
+    {
+      "from": 125,
+      "to": 122
+    },
+    {
+      "from": 125,
+      "to": 123
+    },
+    {
+      "from": 126,
+      "to": 22
+    },
+    {
+      "from": 126,
+      "to": 23
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 14
+    },
+    {
+      "from": 128,
+      "to": 126
+    },
+    {
+      "from": 129,
+      "to": 113
+    },
+    {
+      "from": 129,
+      "to": 117
+    },
+    {
+      "from": 129,
+      "to": 227
+    },
+    {
+      "from": 130,
+      "to": 42
+    },
+    {
+      "from": 130,
+      "to": 127
+    },
+    {
+      "from": 130,
+      "to": 209
+    },
+    {
+      "from": 130,
+      "to": 210
+    },
+    {
+      "from": 130,
+      "to": 216
+    },
+    {
+      "from": 131,
+      "to": 14
+    },
+    {
+      "from": 131,
+      "to": 15
+    },
+    {
+      "from": 131,
+      "to": 31
+    },
+    {
+      "from": 132,
+      "to": 79
+    },
+    {
+      "from": 132,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 14
+    },
+    {
+      "from": 133,
+      "to": 131
+    },
+    {
+      "from": 134,
+      "to": 33
+    },
+    {
+      "from": 134,
+      "to": 43
+    },
+    {
+      "from": 134,
+      "to": 131
+    },
+    {
+      "from": 134,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 3
+    },
+    {
+      "from": 135,
+      "to": 16
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 136,
+      "to": 2
+    },
+    {
+      "from": 136,
+      "to": 16
+    },
+    {
+      "from": 136,
+      "to": 134
+    },
+    {
+      "from": 137,
+      "to": 2
+    },
+    {
+      "from": 137,
+      "to": 16
+    },
+    {
+      "from": 137,
+      "to": 134
+    },
+    {
+      "from": 138,
+      "to": 135
+    },
+    {
+      "from": 139,
+      "to": 20
+    },
+    {
+      "from": 139,
+      "to": 22
+    },
+    {
+      "from": 140,
+      "to": 134
+    },
+    {
+      "from": 140,
+      "to": 135
+    },
+    {
+      "from": 140,
+      "to": 136
+    },
+    {
+      "from": 141,
+      "to": 134
+    },
+    {
+      "from": 142,
+      "to": 134
+    },
+    {
+      "from": 143,
+      "to": 134
+    },
+    {
+      "from": 143,
+      "to": 219
+    },
+    {
+      "from": 144,
+      "to": 22
+    },
+    {
+      "from": 144,
+      "to": 127
+    },
+    {
+      "from": 144,
+      "to": 135
+    },
+    {
+      "from": 144,
+      "to": 136
+    },
+    {
+      "from": 145,
+      "to": 70
+    },
+    {
+      "from": 145,
+      "to": 135
+    },
+    {
+      "from": 145,
+      "to": 136
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 146,
+      "to": 131
+    },
+    {
+      "from": 146,
+      "to": 136
+    },
+    {
+      "from": 147,
+      "to": 131
+    },
+    {
+      "from": 147,
+      "to": 135
+    },
+    {
+      "from": 148,
+      "to": 131
+    },
+    {
+      "from": 148,
+      "to": 134
+    },
+    {
+      "from": 148,
+      "to": 135
+    },
+    {
+      "from": 148,
+      "to": 136
+    },
+    {
+      "from": 148,
+      "to": 137
+    },
+    {
+      "from": 149,
+      "to": 135
+    },
+    {
+      "from": 149,
+      "to": 136
+    },
+    {
+      "from": 149,
+      "to": 227
+    },
+    {
+      "from": 150,
+      "to": 63
+    },
+    {
+      "from": 150,
+      "to": 134
+    },
+    {
+      "from": 150,
+      "to": 135
+    },
+    {
+      "from": 150,
+      "to": 136
+    },
+    {
+      "from": 150,
+      "to": 138
+    },
+    {
+      "from": 150,
+      "to": 143
+    },
+    {
+      "from": 151,
+      "to": 11
+    },
+    {
+      "from": 151,
+      "to": 115
+    },
+    {
+      "from": 152,
+      "to": 40
+    },
+    {
+      "from": 152,
+      "to": 44
+    },
+    {
+      "from": 152,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 46
+    },
+    {
+      "from": 154,
+      "to": 47
+    },
+    {
+      "from": 154,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 155,
+      "to": 16
+    },
+    {
+      "from": 155,
+      "to": 152
+    },
+    {
+      "from": 155,
+      "to": 153
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 157,
+      "to": 155
+    },
+    {
+      "from": 158,
+      "to": 11
+    },
+    {
+      "from": 158,
+      "to": 155
+    },
+    {
+      "from": 159,
+      "to": 11
+    },
+    {
+      "from": 159,
+      "to": 16
+    },
+    {
+      "from": 160,
+      "to": 22
+    },
+    {
+      "from": 160,
+      "to": 152
+    },
+    {
+      "from": 160,
+      "to": 159
+    },
+    {
+      "from": 161,
+      "to": 93
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 222
+    },
+    {
+      "from": 163,
+      "to": 16
+    },
+    {
+      "from": 163,
+      "to": 139
+    },
+    {
+      "from": 163,
+      "to": 152
+    },
+    {
+      "from": 164,
+      "to": 152
+    },
+    {
+      "from": 164,
+      "to": 227
+    },
+    {
+      "from": 165,
+      "to": 155
+    },
+    {
+      "from": 165,
+      "to": 209
+    },
+    {
+      "from": 165,
+      "to": 211
+    },
+    {
+      "from": 166,
+      "to": 12
+    },
+    {
+      "from": 166,
+      "to": 16
+    },
+    {
+      "from": 166,
+      "to": 46
+    },
+    {
+      "from": 166,
+      "to": 245
+    },
+    {
+      "from": 167,
+      "to": 36
+    },
+    {
+      "from": 167,
+      "to": 166
+    },
+    {
+      "from": 167,
+      "to": 12
+    },
+    {
+      "from": 168,
+      "to": 36
+    },
+    {
+      "from": 168,
+      "to": 166
+    },
+    {
+      "from": 169,
+      "to": 36
+    },
+    {
+      "from": 169,
+      "to": 167
+    },
+    {
+      "from": 170,
+      "to": 36
+    },
+    {
+      "from": 170,
+      "to": 167
+    },
+    {
+      "from": 171,
+      "to": 36
+    },
+    {
+      "from": 171,
+      "to": 166
+    },
+    {
+      "from": 171,
+      "to": 168
+    },
+    {
+      "from": 172,
+      "to": 38
+    },
+    {
+      "from": 172,
+      "to": 45
+    },
+    {
+      "from": 172,
+      "to": 166
+    },
+    {
+      "from": 173,
+      "to": 172
+    },
+    {
+      "from": 174,
+      "to": 16
+    },
+    {
+      "from": 174,
+      "to": 169
+    },
+    {
+      "from": 174,
+      "to": 170
+    },
+    {
+      "from": 174,
+      "to": 172
+    },
+    {
+      "from": 174,
+      "to": 223
+    },
+    {
+      "from": 175,
+      "to": 5
+    },
+    {
+      "from": 175,
+      "to": 16
+    },
+    {
+      "from": 175,
+      "to": 172
+    },
+    {
+      "from": 176,
+      "to": 38
+    },
+    {
+      "from": 176,
+      "to": 172
+    },
+    {
+      "from": 177,
+      "to": 9
+    },
+    {
+      "from": 177,
+      "to": 18
+    },
+    {
+      "from": 177,
+      "to": 125
+    },
+    {
+      "from": 177,
+      "to": 171
+    },
+    {
+      "from": 177,
+      "to": 174
+    },
+    {
+      "from": 177,
+      "to": 175
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 178,
+      "to": 179
+    },
+    {
+      "from": 179,
+      "to": 9
+    },
+    {
+      "from": 179,
+      "to": 177
+    },
+    {
+      "from": 180,
+      "to": 172
+    },
+    {
+      "from": 181,
+      "to": 20
+    },
+    {
+      "from": 181,
+      "to": 180
+    },
+    {
+      "from": 182,
+      "to": 20
+    },
+    {
+      "from": 182,
+      "to": 166
+    },
+    {
+      "from": 182,
+      "to": 181
+    },
+    {
+      "from": 183,
+      "to": 172
+    },
+    {
+      "from": 183,
+      "to": 173
+    },
+    {
+      "from": 183,
+      "to": 176
+    },
+    {
+      "from": 184,
+      "to": 172
+    },
+    {
+      "from": 184,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 172
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 186,
+      "to": 16
+    },
+    {
+      "from": 186,
+      "to": 24
+    },
+    {
+      "from": 187,
+      "to": 16
+    },
+    {
+      "from": 187,
+      "to": 24
+    },
+    {
+      "from": 188,
+      "to": 92
+    },
+    {
+      "from": 188,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 187
+    },
+    {
+      "from": 190,
+      "to": 16
+    },
+    {
+      "from": 190,
+      "to": 24
+    },
+    {
+      "from": 190,
+      "to": 54
+    },
+    {
+      "from": 191,
+      "to": 24
+    },
+    {
+      "from": 191,
+      "to": 139
+    },
+    {
+      "from": 192,
+      "to": 13
+    },
+    {
+      "from": 192,
+      "to": 16
+    },
+    {
+      "from": 192,
+      "to": 121
+    },
+    {
+      "from": 193,
+      "to": 4
+    },
+    {
+      "from": 193,
+      "to": 16
+    },
+    {
+      "from": 193,
+      "to": 120
+    },
+    {
+      "from": 194,
+      "to": 7
+    },
+    {
+      "from": 194,
+      "to": 16
+    },
+    {
+      "from": 194,
+      "to": 195
+    },
+    {
+      "from": 195,
+      "to": 7
+    },
+    {
+      "from": 195,
+      "to": 46
+    },
+    {
+      "from": 196,
+      "to": 25
+    },
+    {
+      "from": 197,
+      "to": 63
+    },
+    {
+      "from": 197,
+      "to": 135
+    },
+    {
+      "from": 197,
+      "to": 136
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 198,
+      "to": 139
+    },
+    {
+      "from": 198,
+      "to": 196
+    },
+    {
+      "from": 199,
+      "to": 196
+    },
+    {
+      "from": 200,
+      "to": 3
+    },
+    {
+      "from": 200,
+      "to": 139
+    },
+    {
+      "from": 200,
+      "to": 196
+    },
+    {
+      "from": 202,
+      "to": 86
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 203,
+      "to": 35
+    },
+    {
+      "from": 203,
+      "to": 202
+    },
+    {
+      "from": 204,
+      "to": 172
+    },
+    {
+      "from": 204,
+      "to": 201
+    },
+    {
+      "from": 205,
+      "to": 201
+    },
+    {
+      "from": 206,
+      "to": 201
+    },
+    {
+      "from": 207,
+      "to": 201
+    },
+    {
+      "from": 207,
+      "to": 202
+    },
+    {
+      "from": 207,
+      "to": 53
+    },
+    {
+      "from": 208,
+      "to": 201
+    },
+    {
+      "from": 208,
+      "to": 207
+    },
+    {
+      "from": 208,
+      "to": 236
+    },
+    {
+      "from": 210,
+      "to": 209
+    },
+    {
+      "from": 211,
+      "to": 209
+    },
+    {
+      "from": 212,
+      "to": 209
+    },
+    {
+      "from": 213,
+      "to": 86
+    },
+    {
+      "from": 213,
+      "to": 209
+    },
+    {
+      "from": 214,
+      "to": 86
+    },
+    {
+      "from": 214,
+      "to": 209
+    },
+    {
+      "from": 215,
+      "to": 209
+    },
+    {
+      "from": 216,
+      "to": 209
+    },
+    {
+      "from": 217,
+      "to": 33
+    },
+    {
+      "from": 217,
+      "to": 209
+    },
+    {
+      "from": 217,
+      "to": 215
+    },
+    {
+      "from": 218,
+      "to": 217
+    },
+    {
+      "from": 220,
+      "to": 219
+    },
+    {
+      "from": 221,
+      "to": 219
+    },
+    {
+      "from": 221,
+      "to": 220
+    },
+    {
+      "from": 222,
+      "to": 22
+    },
+    {
+      "from": 222,
+      "to": 33
+    },
+    {
+      "from": 222,
+      "to": 141
+    },
+    {
+      "from": 222,
+      "to": 142
+    },
+    {
+      "from": 222,
+      "to": 219
+    },
+    {
+      "from": 223,
+      "to": 134
+    },
+    {
+      "from": 223,
+      "to": 219
+    },
+    {
+      "from": 223,
+      "to": 221
+    },
+    {
+      "from": 224,
+      "to": 219
+    },
+    {
+      "from": 224,
+      "to": 253
+    },
+    {
+      "from": 225,
+      "to": 1
+    },
+    {
+      "from": 225,
+      "to": 22
+    },
+    {
+      "from": 229,
+      "to": 226
+    },
+    {
+      "from": 229,
+      "to": 227
+    },
+    {
+      "from": 230,
+      "to": 229
+    },
+    {
+      "from": 231,
+      "to": 230
+    },
+    {
+      "from": 232,
+      "to": 227
+    },
+    {
+      "from": 232,
+      "to": 228
+    },
+    {
+      "from": 233,
+      "to": 227
+    },
+    {
+      "from": 233,
+      "to": 228
+    },
+    {
+      "from": 234,
+      "to": 49
+    },
+    {
+      "from": 234,
+      "to": 226
+    },
+    {
+      "from": 234,
+      "to": 227
+    },
+    {
+      "from": 235,
+      "to": 106
+    },
+    {
+      "from": 235,
+      "to": 107
+    },
+    {
+      "from": 235,
+      "to": 129
+    },
+    {
+      "from": 235,
+      "to": 149
+    },
+    {
+      "from": 235,
+      "to": 164
+    },
+    {
+      "from": 235,
+      "to": 229
+    },
+    {
+      "from": 235,
+      "to": 230
+    },
+    {
+      "from": 235,
+      "to": 231
+    },
+    {
+      "from": 235,
+      "to": 232
+    },
+    {
+      "from": 235,
+      "to": 233
+    },
+    {
+      "from": 235,
+      "to": 234
+    },
+    {
+      "from": 235,
+      "to": 236
+    },
+    {
+      "from": 235,
+      "to": 262
+    },
+    {
+      "from": 237,
+      "to": 208
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 226
+    },
+    {
+      "from": 238,
+      "to": 227
+    },
+    {
+      "from": 238,
+      "to": 228
+    },
+    {
+      "from": 239,
+      "to": 226
+    },
+    {
+      "from": 239,
+      "to": 227
+    },
+    {
+      "from": 239,
+      "to": 228
+    },
+    {
+      "from": 240,
+      "to": 226
+    },
+    {
+      "from": 240,
+      "to": 227
+    },
+    {
+      "from": 240,
+      "to": 228
+    },
+    {
+      "from": 241,
+      "to": 238
+    },
+    {
+      "from": 242,
+      "to": 236
+    },
+    {
+      "from": 243,
+      "to": 236
+    },
+    {
+      "from": 243,
+      "to": 57
+    },
+    {
+      "from": 244,
+      "to": 236
+    },
+    {
+      "from": 244,
+      "to": 238
+    },
+    {
+      "from": 245,
+      "to": 243
+    },
+    {
+      "from": 246,
+      "to": 236
+    },
+    {
+      "from": 246,
+      "to": 242
+    },
+    {
+      "from": 246,
+      "to": 241
+    },
+    {
+      "from": 247,
+      "to": 64
+    },
+    {
+      "from": 248,
+      "to": 236
+    },
+    {
+      "from": 248,
+      "to": 237
+    },
+    {
+      "from": 249,
+      "to": 248
+    },
+    {
+      "from": 250,
+      "to": 227
+    },
+    {
+      "from": 250,
+      "to": 247
+    },
+    {
+      "from": 251,
+      "to": 20
+    },
+    {
+      "from": 251,
+      "to": 92
+    },
+    {
+      "from": 252,
+      "to": 251
+    },
+    {
+      "from": 253,
+      "to": 251
+    },
+    {
+      "from": 254,
+      "to": 108
+    },
+    {
+      "from": 254,
+      "to": 251
+    },
+    {
+      "from": 254,
+      "to": 252
+    },
+    {
+      "from": 254,
+      "to": 253
+    },
+    {
+      "from": 255,
+      "to": 27
+    },
+    {
+      "from": 255,
+      "to": 35
+    },
+    {
+      "from": 256,
+      "to": 35
+    },
+    {
+      "from": 256,
+      "to": 36
+    },
+    {
+      "from": 257,
+      "to": 65
+    },
+    {
+      "from": 257,
+      "to": 134
+    },
+    {
+      "from": 257,
+      "to": 255
+    },
+    {
+      "from": 257,
+      "to": 256
+    },
+    {
+      "from": 258,
+      "to": 238
+    },
+    {
+      "from": 259,
+      "to": 244
+    },
+    {
+      "from": 260,
+      "to": 259
+    },
+    {
+      "from": 261,
+      "to": 259
+    },
+    {
+      "from": 261,
+      "to": 260
+    },
+    {
+      "from": 261,
+      "to": 258
+    },
+    {
+      "from": 262,
+      "to": 227
+    },
+    {
+      "from": 262,
+      "to": 259
+    },
+    {
+      "from": 263,
+      "to": 266
+    },
+    {
+      "from": 263,
+      "to": 227
+    },
+    {
+      "from": 264,
+      "to": 263
+    },
+    {
+      "from": 265,
+      "to": 264
+    },
+    {
+      "from": 265,
+      "to": 266
+    },
+    {
+      "from": 266,
+      "to": 236
+    },
+    {
+      "from": 267,
+      "to": 266
+    },
+    {
+      "from": 268,
+      "to": 267
+    },
+    {
+      "from": 269,
+      "to": 266
+    },
+    {
+      "from": 269,
+      "to": 268
+    },
+    {
+      "from": 270,
+      "to": 236
+    },
+    {
+      "from": 270,
+      "to": 237
+    },
+    {
+      "from": 270,
+      "to": 238
+    },
+    {
+      "from": 270,
+      "to": 239
+    },
+    {
+      "from": 270,
+      "to": 240
+    },
+    {
+      "from": 270,
+      "to": 241
+    },
+    {
+      "from": 270,
+      "to": 242
+    },
+    {
+      "from": 270,
+      "to": 243
+    },
+    {
+      "from": 270,
+      "to": 244
+    },
+    {
+      "from": 270,
+      "to": 245
+    },
+    {
+      "from": 270,
+      "to": 246
+    },
+    {
+      "from": 270,
+      "to": 248
+    }
+  ]
+}

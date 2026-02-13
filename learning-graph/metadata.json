@@ -1,0 +1,10 @@
+{
+  "title": "Modern Oral & Maxillofacial Surgery",
+  "description": "An intelligent clinical reference covering full-scope OMS practice: clinical surgery, surgical technology, practice operations, and professional development for the board-certified practitioner.",
+  "creator": "Daniel Yarmoluk",
+  "date": "2026-02-12",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}
