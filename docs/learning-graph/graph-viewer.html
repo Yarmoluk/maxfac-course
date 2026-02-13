@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMS Learning Graph</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #0A1628 0%, #1B2838 100%);
+            min-height: 100vh;
+            color: #E2E8F0;
+        }
+
+        .container { max-width: 1600px; margin: 0 auto; padding: 16px; }
+
+        header {
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(78,205,196,0.12);
+            border-radius: 14px;
+            padding: 16px 24px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        h1 { font-size: 1.3em; font-weight: 700; letter-spacing: -0.03em; }
+        h1 span { color: #4ECDC4; }
+        .subtitle { color: #94A3B8; font-size: 0.85em; }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 16px;
+        }
+
+        .sidebar {
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(78,205,196,0.1);
+            border-radius: 14px;
+            padding: 16px;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+
+        .sidebar h3 {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #94A3B8;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(78,205,196,0.12);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+            padding: 6px 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 0.82em;
+        }
+
+        .legend-item:hover { background: rgba(78,205,196,0.08); }
+
+        .legend-color {
+            width: 14px; height: 14px;
+            border-radius: 4px;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .legend-count {
+            margin-left: auto;
+            background: rgba(255,255,255,0.08);
+            padding: 1px 7px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            color: #94A3B8;
+        }
+
+        .graph-container {
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(78,205,196,0.1);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .graph-toolbar {
+            display: flex;
+            gap: 8px;
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(78,205,196,0.08);
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1; min-width: 160px;
+            padding: 8px 14px;
+            border: 1px solid rgba(78,205,196,0.2);
+            border-radius: 10px;
+            font-size: 13px;
+            background: rgba(255,255,255,0.06);
+            color: #E2E8F0;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-box:focus { border-color: #4ECDC4; }
+        .search-box::placeholder { color: #64748B; }
+
+        .btn {
+            padding: 8px 16px;
+            border: 1px solid rgba(78,205,196,0.2);
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: rgba(255,255,255,0.06);
+            color: #E2E8F0;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: rgba(78,205,196,0.15);
+            border-color: #4ECDC4;
+        }
+
+        .btn-primary {
+            background: rgba(78,205,196,0.15);
+            border-color: #4ECDC4;
+            color: #4ECDC4;
+        }
+
+        #network {
+            width: 100%;
+            height: calc(100vh - 220px);
+            min-height: 450px;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 24px;
+            padding: 10px 16px;
+            border-top: 1px solid rgba(78,205,196,0.08);
+            font-size: 0.8em;
+        }
+
+        .stat-label { color: #64748B; }
+        .stat-value { font-weight: 700; color: #4ECDC4; margin-left: 4px; }
+
+        .node-info {
+            margin-top: 16px;
+            padding: 12px;
+            background: rgba(78,205,196,0.06);
+            border: 1px solid rgba(78,205,196,0.15);
+            border-radius: 10px;
+            display: none;
+            font-size: 0.85em;
+        }
+
+        .node-info.active { display: block; }
+        .node-info h4 { color: #4ECDC4; margin-bottom: 8px; font-size: 1em; }
+        .node-info p { color: #94A3B8; margin-bottom: 3px; font-size: 0.88em; }
+
+        .filter-section {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(78,205,196,0.1);
+        }
+
+        .filter-section label {
+            display: block;
+            margin-bottom: 6px;
+            color: #94A3B8;
+            font-size: 0.82em;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .filter-section select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid rgba(78,205,196,0.2);
+            border-radius: 8px;
+            font-size: 0.85em;
+            background: rgba(255,255,255,0.06);
+            color: #E2E8F0;
+        }
+
+        @media (max-width: 900px) {
+            .main-content { grid-template-columns: 1fr; }
+            .sidebar { max-height: none; display: none; }
+            header { padding: 12px 16px; }
+            h1 { font-size: 1.1em; }
+            #network { height: calc(100vh - 180px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>OMS <span>Learning Graph</span></h1>
+                <p class="subtitle">270 Concepts &middot; 603 Dependencies &middot; 14 Categories</p>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <h3>Taxonomy</h3>
+                <div id="legend"></div>
+
+                <div class="filter-section">
+                    <label for="layoutSelect">Layout</label>
+                    <select id="layoutSelect">
+                        <option value="default">Physics Simulation</option>
+                        <option value="hierarchical">Hierarchical (Top-Down)</option>
+                        <option value="hierarchicalLR" selected>Hierarchical (Left-Right)</option>
+                    </select>
+                </div>
+
+                <div class="node-info" id="nodeInfo">
+                    <h4 id="nodeName">Select a Node</h4>
+                    <p><strong>ID:</strong> <span id="nodeId"></span></p>
+                    <p><strong>Category:</strong> <span id="nodeGroup"></span></p>
+                    <p><strong>Prerequisites:</strong> <span id="nodeDeps"></span></p>
+                    <p><strong>Required by:</strong> <span id="nodeDepends"></span></p>
+                </div>
+            </aside>
+
+            <div class="graph-container">
+                <div class="graph-toolbar">
+                    <input type="text" class="search-box" id="searchBox" placeholder="Search concepts...">
+                    <button class="btn btn-primary" id="fitBtn">Fit</button>
+                    <button class="btn" id="resetBtn">Reset</button>
+                    <button class="btn" id="togglePhysics">Physics</button>
+                </div>
+
+                <div id="network"></div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <span class="stat-label">Concepts:</span>
+                        <span class="stat-value" id="nodeCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Dependencies:</span>
+                        <span class="stat-value" id="edgeCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Categories:</span>
+                        <span class="stat-value" id="groupCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let graphData = null;
+        let network = null;
+        let allNodes = null;
+        let allEdges = null;
+        let physicsEnabled = false;
+
+        const groupColors = {
+            "ANAT": { bg: "#F08080", fg: "#000" },
+            "IMG":  { bg: "#87CEEB", fg: "#000" },
+            "ANES": { bg: "#FFDAB9", fg: "#000" },
+            "PHARM":{ bg: "#FFFFE0", fg: "#000" },
+            "DENT": { bg: "#98FB98", fg: "#000" },
+            "IMPL": { bg: "#7FFFD4", fg: "#000" },
+            "TRAU": { bg: "#FFB6C1", fg: "#000" },
+            "ORTH": { bg: "#B0C4DE", fg: "#000" },
+            "TMJ":  { bg: "#D8BFD8", fg: "#000" },
+            "PATH": { bg: "#FFE4E1", fg: "#000" },
+            "ADVC": { bg: "#E6E6FA", fg: "#000" },
+            "TECH": { bg: "#AFEEEE", fg: "#000" },
+            "OPS":  { bg: "#F0FFF0", fg: "#000" },
+            "FRONT":{ bg: "#DDA0DD", fg: "#000" }
+        };
+
+        const groupNames = {
+            "ANAT": "Anatomy",
+            "IMG": "Imaging",
+            "ANES": "Anesthesia",
+            "PHARM": "Pharmacology",
+            "DENT": "Dentoalveolar",
+            "IMPL": "Implants",
+            "TRAU": "Trauma",
+            "ORTH": "Orthognathic",
+            "TMJ": "TMJ",
+            "PATH": "Pathology & Oncology",
+            "ADVC": "Advanced Clinical",
+            "TECH": "Surgical Technology",
+            "OPS": "Practice Operations",
+            "FRONT": "Frontiers"
+        };
+
+        async function loadGraph() {
+            try {
+                const response = await fetch('learning-graph.json');
+                graphData = await response.json();
+                initializeGraph();
+            } catch (error) {
+                console.error('Error loading graph:', error);
+            }
+        }
+
+        function initializeGraph() {
+            const nodes = graphData.nodes.map(node => ({
+                id: node.id,
+                label: node.label,
+                group: node.group,
+                color: {
+                    background: groupColors[node.group]?.bg || '#ccc',
+                    border: groupColors[node.group]?.bg || '#999',
+                    highlight: { background: '#4ECDC4', border: '#00BFA5' }
+                },
+                font: { color: groupColors[node.group]?.fg || '#000', size: 12 },
+                shape: node.shape || 'ellipse',
+                borderWidth: 1,
+                shadow: { enabled: true, size: 4, color: 'rgba(0,0,0,0.2)' }
+            }));
+
+            const edges = graphData.edges.map(edge => ({
+                from: edge.from,
+                to: edge.to,
+                arrows: { to: { scaleFactor: 0.6 } },
+                color: { color: 'rgba(148,163,184,0.35)', highlight: '#4ECDC4' },
+                width: 1,
+                smooth: { type: 'cubicBezier', forceDirection: 'horizontal', roundness: 0.4 }
+            }));
+
+            allNodes = new vis.DataSet(nodes);
+            allEdges = new vis.DataSet(edges);
+
+            const container = document.getElementById('network');
+            const data = { nodes: allNodes, edges: allEdges };
+
+            const options = {
+                layout: {
+                    hierarchical: {
+                        direction: 'LR',
+                        sortMethod: 'directed',
+                        levelSeparation: 180,
+                        nodeSpacing: 50,
+                        treeSpacing: 80
+                    }
+                },
+                nodes: {
+                    font: { size: 12, face: '-apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif' },
+                    borderWidth: 1,
+                    margin: 8
+                },
+                edges: {
+                    smooth: { type: 'cubicBezier', forceDirection: 'horizontal', roundness: 0.4 }
+                },
+                physics: { enabled: false },
+                interaction: {
+                    hover: true,
+                    tooltipDelay: 150,
+                    zoomView: true,
+                    dragView: true,
+                    multiselect: true
+                }
+            };
+
+            network = new vis.Network(container, data, options);
+
+            document.getElementById('nodeCount').textContent = nodes.length;
+            document.getElementById('edgeCount').textContent = edges.length;
+            document.getElementById('groupCount').textContent = Object.keys(groupNames).length;
+
+            buildLegend(nodes);
+
+            network.on('click', function(params) {
+                if (params.nodes.length > 0) showNodeInfo(params.nodes[0]);
+            });
+
+            network.on('doubleClick', function(params) {
+                if (params.nodes.length > 0) highlightConnected(params.nodes[0]);
+            });
+        }
+
+        function buildLegend(nodes) {
+            const legend = document.getElementById('legend');
+            const counts = {};
+            nodes.forEach(n => { counts[n.group] = (counts[n.group] || 0) + 1; });
+            legend.innerHTML = '';
+            Object.keys(groupNames).forEach(gid => {
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+                item.innerHTML = `
+                    <div class="legend-color" style="background:${groupColors[gid]?.bg||'#ccc'}"></div>
+                    <span>${groupNames[gid]}</span>
+                    <span class="legend-count">${counts[gid]||0}</span>`;
+                item.addEventListener('click', () => filterByGroup(gid));
+                legend.appendChild(item);
+            });
+        }
+
+        function showNodeInfo(nodeId) {
+            const node = allNodes.get(nodeId);
+            const inE = allEdges.get({ filter: e => e.to === nodeId });
+            const outE = allEdges.get({ filter: e => e.from === nodeId });
+            document.getElementById('nodeName').textContent = node.label;
+            document.getElementById('nodeId').textContent = node.id;
+            document.getElementById('nodeGroup').textContent = groupNames[node.group] || node.group;
+            document.getElementById('nodeDeps').textContent = inE.length;
+            document.getElementById('nodeDepends').textContent = outE.length;
+            document.getElementById('nodeInfo').classList.add('active');
+        }
+
+        function highlightConnected(nodeId) {
+            const connected = network.getConnectedNodes(nodeId);
+            connected.push(nodeId);
+            allNodes.forEach(n => {
+                allNodes.update({ id: n.id, opacity: connected.includes(n.id) ? 1 : 0.15 });
+            });
+        }
+
+        function filterByGroup(gid) {
+            const ids = allNodes.get({ filter: n => n.group === gid }).map(n => n.id);
+            network.selectNodes(ids);
+            network.fit({ nodes: ids, animation: true });
+        }
+
+        document.getElementById('searchBox').addEventListener('input', function(e) {
+            const q = e.target.value.toLowerCase();
+            if (q.length < 2) {
+                allNodes.forEach(n => { allNodes.update({ id: n.id, opacity: 1 }); });
+                return;
+            }
+            const matches = allNodes.get({ filter: n => n.label.toLowerCase().includes(q) }).map(n => n.id);
+            allNodes.forEach(n => { allNodes.update({ id: n.id, opacity: matches.includes(n.id) ? 1 : 0.15 }); });
+            if (matches.length > 0) { network.selectNodes(matches); network.fit({ nodes: matches, animation: true }); }
+        });
+
+        document.getElementById('fitBtn').addEventListener('click', () => network.fit({ animation: true }));
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            allNodes.forEach(n => { allNodes.update({ id: n.id, opacity: 1 }); });
+            network.unselectAll();
+            document.getElementById('searchBox').value = '';
+            document.getElementById('nodeInfo').classList.remove('active');
+        });
+
+        document.getElementById('togglePhysics').addEventListener('click', () => {
+            physicsEnabled = !physicsEnabled;
+            network.setOptions({ physics: { enabled: physicsEnabled } });
+        });
+
+        document.getElementById('layoutSelect').addEventListener('change', function(e) {
+            const v = e.target.value;
+            let opts = {};
+            if (v === 'hierarchical') {
+                opts = { layout: { hierarchical: { direction: 'UD', sortMethod: 'directed', levelSeparation: 120, nodeSpacing: 100 } }, physics: { enabled: false } };
+            } else if (v === 'hierarchicalLR') {
+                opts = { layout: { hierarchical: { direction: 'LR', sortMethod: 'directed', levelSeparation: 180, nodeSpacing: 50 } }, physics: { enabled: false } };
+            } else {
+                opts = { layout: { hierarchical: false }, physics: { enabled: true, solver: 'forceAtlas2Based', forceAtlas2Based: { gravitationalConstant: -40, centralGravity: 0.008, springLength: 120, springConstant: 0.06 }, stabilization: { iterations: 150 } } };
+            }
+            network.setOptions(opts);
+            physicsEnabled = (v === 'default');
+            setTimeout(() => network.fit({ animation: true }), 600);
+        });
+
+        loadGraph();
+    </script>
+</body>
+</html>

@@ -1,18 +1,14 @@
-# Learning Graph for Modern Oral & Maxillofacial Surgery
+# Learning Graph
 
-This section contains the learning graph for this textbook. A learning graph is
-a graph of concepts used in this textbook. Each concept is represented by a
-node in a network graph. Concepts are connected by directed edges that indicate
-what concepts each node depends on before that concept is understood by the practitioner.
+Interactive visualization of 270 interconnected OMS concepts across 14 clinical categories.
 
-A learning graph is the foundational data structure for intelligent textbooks that can recommend learning paths.
-A learning graph is like a roadmap of concepts to help practitioners navigate clinical knowledge.
+[Open Full-Screen Graph Viewer](graph-viewer.html){.md-button .md-button--primary target="_blank"}
 
-At the left of the learning graph are prerequisite or foundational concepts. They
-have no outbound edges. They only have inbound edges for other concepts that depend on
-understanding these foundational prerequisite concepts. At the far right
-we have the most advanced concepts in the course. To master these concepts you
-must understand all the concepts that they point to.
+<iframe src="graph-viewer.html" width="100%" height="600" style="border: 1px solid rgba(78,205,196,0.15); border-radius: 14px; margin: 1.5em 0;"></iframe>
+
+Foundational concepts appear on the left with no prerequisites.
+Advanced concepts on the right require mastery of all upstream dependencies.
+Click a node for details. Double-click to highlight its connections. Search to filter.
 
 ## Course Description
 
