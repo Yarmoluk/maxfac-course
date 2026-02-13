@@ -13,3 +13,7 @@ build/
 node_modules/
 .cache/
 chatbot/knowledge_base.txt
+
+# Claude Code workflow
+.claude/
+CLAUDE.md
