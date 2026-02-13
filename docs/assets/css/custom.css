@@ -1,123 +1,145 @@
 /* ============================================================
-   Oral & Maxillofacial Surgery — Premium Clinical UI
-   Aesthetic: Apple Health × Surgical Instrument
-   Mobile-first · iPhone-optimized · LinkedIn-ready
+   Oral & Maxillofacial Surgery — Premium Medical UI
+   Tech-Forward Clinical Excellence
+   Mobile-First · LinkedIn-Ready · Surgical Precision
    ============================================================ */
 
 /* ============================================================
    0. CUSTOM FONT IMPORT
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap');
 
 /* ============================================================
-   1. DESIGN TOKENS
+   1. DESIGN TOKENS — Premium Medical Palette
    ============================================================ */
 :root {
-  /* --- Primary palette --- */
-  --md-primary-fg-color:        #0D1B2A;
-  --md-primary-fg-color--light: #1B2E45;
-  --md-primary-fg-color--dark:  #060F18;
+  /* --- Primary palette: Deep Navy & Slate --- */
+  --md-primary-fg-color:        #0A1628;
+  --md-primary-fg-color--light: #1B2838;
+  --md-primary-fg-color--dark:  #050B14;
   --md-primary-bg-color:        #FFFFFF;
-  --md-primary-bg-color--light: #FFFFFF;
+  --md-primary-bg-color--light: #FAFBFC;
 
-  /* --- Accent: surgical teal --- */
-  --md-accent-fg-color:         #00BFA5;
-  --md-accent-fg-color--transparent: rgba(0, 191, 165, 0.08);
+  /* --- Accent: Surgical Teal (Medical Device Premium) --- */
+  --md-accent-fg-color:         #4ECDC4;
+  --md-accent-fg-color--transparent: rgba(78, 205, 196, 0.08);
   --md-accent-bg-color:         #FFFFFF;
 
   /* --- Surface system --- */
-  --maxfac-bg:                  #FFFFFF;
-  --maxfac-surface:             #F7F8FA;
+  --maxfac-bg:                  #FAFBFC;
+  --maxfac-surface:             #F5F7FA;
   --maxfac-surface-raised:      #FFFFFF;
-  --maxfac-border:              #E8ECF0;
-  --maxfac-border-subtle:       #F0F2F5;
-  --maxfac-divider:             #EAEDF1;
+  --maxfac-border:              #E1E8ED;
+  --maxfac-border-subtle:       #EDF2F7;
+  --maxfac-divider:             #E2E8F0;
 
   /* --- Text hierarchy --- */
-  --maxfac-text-primary:        #0D1B2A;
-  --maxfac-text-secondary:      #4A5568;
-  --maxfac-text-tertiary:       #8896A6;
+  --maxfac-text-primary:        #0A1628;
+  --maxfac-text-secondary:      #475569;
+  --maxfac-text-tertiary:       #94A3B8;
   --maxfac-text-inverse:        #FFFFFF;
 
-  /* --- Semantic colors --- */
-  --maxfac-teal:                #00BFA5;
-  --maxfac-teal-soft:           rgba(0, 191, 165, 0.08);
-  --maxfac-teal-medium:         rgba(0, 191, 165, 0.15);
+  /* --- Semantic colors: Premium medical palette --- */
+  --maxfac-teal:                #4ECDC4;
+  --maxfac-teal-dark:           #00BFA5;
+  --maxfac-teal-soft:           rgba(78, 205, 196, 0.08);
+  --maxfac-teal-medium:         rgba(78, 205, 196, 0.15);
   --maxfac-amber:               #F59E0B;
   --maxfac-amber-soft:          rgba(245, 158, 11, 0.08);
   --maxfac-red:                 #EF4444;
   --maxfac-red-soft:            rgba(239, 68, 68, 0.06);
-  --maxfac-blue:                #3B82F6;
-  --maxfac-blue-soft:           rgba(59, 130, 246, 0.06);
-  --maxfac-purple:              #8B5CF6;
-  --maxfac-purple-soft:         rgba(139, 92, 246, 0.06);
+  --maxfac-blue:                #4F46E5;
+  --maxfac-blue-soft:           rgba(79, 70, 229, 0.06);
+  --maxfac-purple:              #7C3AED;
+  --maxfac-purple-soft:         rgba(124, 58, 237, 0.06);
+  --maxfac-gold:                #F59E0B;
+  --maxfac-gold-soft:           rgba(245, 158, 11, 0.1);
 
-  /* --- Code --- */
-  --maxfac-code-bg:             #F4F6F8;
-  --maxfac-code-text:           #0D1B2A;
+  /* --- Code blocks: Dark themed for contrast --- */
+  --maxfac-code-bg:             #1E293B;
+  --maxfac-code-text:           #E2E8F0;
 
-  /* --- Radii --- */
-  --maxfac-radius-sm:           8px;
-  --maxfac-radius-md:           12px;
-  --maxfac-radius-lg:           16px;
-  --maxfac-radius-xl:           20px;
+  /* --- Radii: Refined modern --- */
+  --maxfac-radius-sm:           6px;
+  --maxfac-radius-md:           10px;
+  --maxfac-radius-lg:           14px;
+  --maxfac-radius-xl:           18px;
 
-  /* --- Shadows (Apple-style subtle depth) --- */
-  --maxfac-shadow-xs:           0 1px 2px rgba(0, 0, 0, 0.04);
-  --maxfac-shadow-sm:           0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-  --maxfac-shadow-md:           0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
-  --maxfac-shadow-lg:           0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  /* --- Shadows: Elevated surgical instrument precision --- */
+  --maxfac-shadow-xs:           0 1px 2px rgba(10, 22, 40, 0.04), 0 1px 1px rgba(10, 22, 40, 0.02);
+  --maxfac-shadow-sm:           0 2px 4px rgba(10, 22, 40, 0.06), 0 1px 2px rgba(10, 22, 40, 0.03);
+  --maxfac-shadow-md:           0 4px 12px rgba(10, 22, 40, 0.08), 0 2px 6px rgba(10, 22, 40, 0.04);
+  --maxfac-shadow-lg:           0 8px 24px rgba(10, 22, 40, 0.1), 0 4px 12px rgba(10, 22, 40, 0.06);
+  --maxfac-shadow-xl:           0 16px 48px rgba(10, 22, 40, 0.12), 0 8px 24px rgba(10, 22, 40, 0.08);
 
-  /* --- Transitions --- */
+  /* --- Transitions: Smooth, professional --- */
   --maxfac-ease:                cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --maxfac-ease-spring:         cubic-bezier(0.34, 1.56, 0.64, 1);
   --maxfac-duration:            0.2s;
 
   /* --- Content width --- */
   --maxfac-content-width:       720px;
+
+  /* --- Gradients --- */
+  --maxfac-gradient-hero:       linear-gradient(135deg, #0A1628 0%, #1B2838 50%, #0F1A2B 100%);
+  --maxfac-gradient-accent:     linear-gradient(135deg, #4ECDC4 0%, #00BFA5 100%);
 }
 
 /* ============================================================
-   1b. DARK MODE — Premium Medical Dashboard
+   1b. DARK MODE — Rich Clinical Dashboard
    ============================================================ */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #E2E8F0;
   --md-primary-fg-color--light: #CBD5E1;
   --md-primary-fg-color--dark:  #F1F5F9;
-  --md-primary-bg-color:        #0F1419;
-  --md-accent-fg-color:         #2DD4BF;
-  --md-accent-fg-color--transparent: rgba(45, 212, 191, 0.1);
+  --md-primary-bg-color:        #0A1628;
+  --md-accent-fg-color:         #4ECDC4;
+  --md-accent-fg-color--transparent: rgba(78, 205, 196, 0.1);
 
-  --maxfac-bg:                  #0F1419;
-  --maxfac-surface:             #161D25;
-  --maxfac-surface-raised:      #1C252F;
-  --maxfac-border:              #2A3441;
-  --maxfac-border-subtle:       #1E2830;
-  --maxfac-divider:             #232D39;
+  /* Dark mode surfaces */
+  --maxfac-bg:                  #0A1628;
+  --maxfac-surface:             #1B2838;
+  --maxfac-surface-raised:      #253548;
+  --maxfac-border:              #2D3E52;
+  --maxfac-border-subtle:       #1F2D40;
+  --maxfac-divider:             #28384E;
 
-  --maxfac-text-primary:        #E2E8F0;
+  /* Dark mode text */
+  --maxfac-text-primary:        #F1F5F9;
   --maxfac-text-secondary:      #94A3B8;
   --maxfac-text-tertiary:       #64748B;
-  --maxfac-text-inverse:        #0F1419;
+  --maxfac-text-inverse:        #0A1628;
 
-  --maxfac-teal:                #2DD4BF;
-  --maxfac-teal-soft:           rgba(45, 212, 191, 0.08);
-  --maxfac-teal-medium:         rgba(45, 212, 191, 0.15);
+  /* Dark mode semantics */
+  --maxfac-teal:                #4ECDC4;
+  --maxfac-teal-dark:           #2DD4BF;
+  --maxfac-teal-soft:           rgba(78, 205, 196, 0.1);
+  --maxfac-teal-medium:         rgba(78, 205, 196, 0.18);
   --maxfac-amber:               #FBBF24;
   --maxfac-amber-soft:          rgba(251, 191, 36, 0.1);
   --maxfac-red:                 #F87171;
   --maxfac-red-soft:            rgba(248, 113, 113, 0.08);
-  --maxfac-blue:                #60A5FA;
-  --maxfac-blue-soft:           rgba(96, 165, 250, 0.08);
+  --maxfac-blue:                #818CF8;
+  --maxfac-blue-soft:           rgba(129, 140, 248, 0.08);
   --maxfac-purple:              #A78BFA;
   --maxfac-purple-soft:         rgba(167, 139, 250, 0.08);
+  --maxfac-gold:                #FBBF24;
+  --maxfac-gold-soft:           rgba(251, 191, 36, 0.12);
 
-  --maxfac-code-bg:             #1A222C;
+  /* Dark code blocks */
+  --maxfac-code-bg:             #0F1A2B;
   --maxfac-code-text:           #E2E8F0;
 
-  --maxfac-shadow-xs:           0 1px 2px rgba(0, 0, 0, 0.2);
-  --maxfac-shadow-sm:           0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.15);
-  --maxfac-shadow-md:           0 4px 12px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
-  --maxfac-shadow-lg:           0 8px 24px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
+  /* Dark shadows: deeper, richer */
+  --maxfac-shadow-xs:           0 1px 2px rgba(0, 0, 0, 0.3);
+  --maxfac-shadow-sm:           0 2px 4px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --maxfac-shadow-md:           0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.25);
+  --maxfac-shadow-lg:           0 8px 24px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(0, 0, 0, 0.3);
+  --maxfac-shadow-xl:           0 16px 48px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  /* Dark gradients */
+  --maxfac-gradient-hero:       linear-gradient(135deg, #0A1628 0%, #1B2838 50%, #0F1A2B 100%);
+  --maxfac-gradient-accent:     linear-gradient(135deg, #4ECDC4 0%, #2DD4BF 100%);
 }
 
 [data-md-color-scheme="slate"] body {
@@ -127,6 +149,11 @@
 /* ============================================================
    2. BASE & BODY
    ============================================================ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4em;
+}
+
 body {
   background-color: var(--maxfac-bg);
   -webkit-font-smoothing: antialiased;
@@ -136,58 +163,61 @@ body {
 
 /* Page-load fade-in */
 @keyframes maxfac-fade-in {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 .md-main {
-  animation: maxfac-fade-in 0.4s var(--maxfac-ease) both;
+  animation: maxfac-fade-in 0.5s var(--maxfac-ease) both;
 }
 
 /* ============================================================
-   3. TYPOGRAPHY
+   3. TYPOGRAPHY — Bold, Authoritative, Medical
    ============================================================ */
 .md-typeset {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.75;
+  font-size: 0.95rem;
+  line-height: 1.8;
   color: var(--maxfac-text-primary);
   -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.011em;
 }
 
-/* --- Headings --- */
+/* --- Headings: Tight letter-spacing, bold hierarchy --- */
 .md-typeset h1 {
+  font-family: 'Poppins', 'Inter', sans-serif;
   font-weight: 800;
-  font-size: 2rem;
-  letter-spacing: -0.035em;
+  font-size: 2.2rem;
+  letter-spacing: -0.04em;
   line-height: 1.15;
   color: var(--maxfac-text-primary);
   border-bottom: none;
   padding-bottom: 0;
   margin-top: 0;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.8em;
   position: relative;
 }
 
 .md-typeset h1::after {
   content: '';
   display: block;
-  width: 40px;
-  height: 3px;
-  background: var(--maxfac-teal);
+  width: 48px;
+  height: 4px;
+  background: var(--maxfac-gradient-accent);
   border-radius: 2px;
-  margin-top: 0.5em;
+  margin-top: 0.6em;
 }
 
 .md-typeset h2 {
+  font-family: 'Poppins', 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 1.45rem;
-  letter-spacing: -0.025em;
-  line-height: 1.25;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+  line-height: 1.3;
   color: var(--maxfac-text-primary);
-  margin-top: 2.5em;
-  margin-bottom: 0.6em;
-  padding-top: 0.5em;
+  margin-top: 2.8em;
+  margin-bottom: 0.7em;
+  padding-top: 0.6em;
   border-top: 1px solid var(--maxfac-border-subtle);
 }
 
@@ -199,81 +229,88 @@ body {
 }
 
 .md-typeset h3 {
-  font-weight: 600;
-  font-size: 1.15rem;
-  letter-spacing: -0.015em;
-  line-height: 1.35;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
   color: var(--maxfac-text-primary);
   margin-top: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
 }
 
 .md-typeset h4 {
   font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: -0.01em;
+  font-size: 1.05rem;
+  letter-spacing: -0.015em;
   color: var(--maxfac-text-secondary);
-  margin-top: 1.5em;
-  margin-bottom: 0.4em;
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
 }
 
 .md-typeset h5,
 .md-typeset h6 {
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   color: var(--maxfac-text-tertiary);
   margin-top: 1.5em;
 }
 
-/* --- Body text --- */
+/* --- Body text: generous line-height --- */
 .md-typeset p {
-  margin-bottom: 1.25em;
+  margin-bottom: 1.3em;
+  line-height: 1.8;
 }
 
 .md-typeset a {
   color: var(--maxfac-teal);
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  font-weight: 500;
   transition: border-color var(--maxfac-duration) var(--maxfac-ease),
               color var(--maxfac-duration) var(--maxfac-ease);
 }
 
 .md-typeset a:hover {
   border-bottom-color: var(--maxfac-teal);
+  color: var(--maxfac-teal-dark);
 }
 
 /* --- Lists --- */
 .md-typeset ul,
 .md-typeset ol {
-  margin-bottom: 1.25em;
+  margin-bottom: 1.3em;
+  line-height: 1.8;
 }
 
 .md-typeset li {
-  margin-bottom: 0.35em;
+  margin-bottom: 0.4em;
 }
 
 .md-typeset li::marker {
-  color: var(--maxfac-text-tertiary);
+  color: var(--maxfac-teal);
+  font-weight: 600;
 }
 
 /* --- Blockquotes --- */
 .md-typeset blockquote {
-  border-left: 3px solid var(--maxfac-border);
-  padding: 0.5em 1.25em;
-  margin: 1.5em 0;
+  border-left: 4px solid var(--maxfac-teal);
+  padding: 0.6em 1.5em;
+  margin: 1.8em 0;
   color: var(--maxfac-text-secondary);
   background: var(--maxfac-surface);
-  border-radius: 0 var(--maxfac-radius-sm) var(--maxfac-radius-sm) 0;
+  border-radius: 0 var(--maxfac-radius-md) var(--maxfac-radius-md) 0;
+  font-style: italic;
 }
 
 /* --- Horizontal rules --- */
 .md-typeset hr {
   border: none;
   height: 1px;
-  background: var(--maxfac-divider);
-  margin: 2.5em 0;
+  background: linear-gradient(90deg, transparent, var(--maxfac-divider) 50%, transparent);
+  margin: 3em 0;
 }
 
 /* ============================================================
@@ -286,62 +323,68 @@ body {
 .md-content__inner {
   max-width: var(--maxfac-content-width);
   margin: 0 auto;
-  padding-top: 1.5em;
-  padding-bottom: 3em;
+  padding-top: 1.8em;
+  padding-bottom: 3.5em;
 }
 
 /* ============================================================
-   5. HEADER BAR
+   5. HEADER BAR — Refined gradient
    ============================================================ */
 .md-header {
-  background: var(--md-primary-fg-color);
+  background: var(--maxfac-gradient-hero);
   box-shadow: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(78, 205, 196, 0.1);
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
 }
 
 .md-header[data-md-state="shadow"] {
   box-shadow: var(--maxfac-shadow-md);
+  border-bottom: 1px solid rgba(78, 205, 196, 0.15);
 }
 
 .md-header__title {
-  font-weight: 600;
-  font-size: 0.82rem;
-  letter-spacing: 0.01em;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
 }
 
 .md-header__button {
-  transition: opacity var(--maxfac-duration) var(--maxfac-ease);
+  transition: opacity var(--maxfac-duration) var(--maxfac-ease),
+              transform var(--maxfac-duration) var(--maxfac-ease);
 }
 
 .md-header__button:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 /* ============================================================
-   6. NAVIGATION TABS
+   6. NAVIGATION TABS — Animated underline
    ============================================================ */
 .md-tabs {
-  background: var(--md-primary-fg-color--dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, #0F1A2B 0%, #0A1628 100%);
+  border-bottom: 1px solid rgba(78, 205, 196, 0.08);
 }
 
 .md-tabs__link {
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.01em;
-  opacity: 0.6;
-  transition: opacity var(--maxfac-duration) var(--maxfac-ease);
+  letter-spacing: 0.02em;
+  opacity: 0.65;
+  transition: opacity var(--maxfac-duration) var(--maxfac-ease),
+              color var(--maxfac-duration) var(--maxfac-ease);
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  position: relative;
 }
 
 .md-tabs__link--active {
   opacity: 1;
   font-weight: 600;
-  position: relative;
+  color: var(--maxfac-teal);
 }
 
 .md-tabs__link--active::after {
@@ -350,10 +393,22 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 24px;
-  height: 2px;
-  background: var(--maxfac-teal);
-  border-radius: 1px;
+  width: 28px;
+  height: 3px;
+  background: var(--maxfac-gradient-accent);
+  border-radius: 2px 2px 0 0;
+  animation: tab-slide-in 0.3s var(--maxfac-ease-spring) both;
+}
+
+@keyframes tab-slide-in {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 28px;
+    opacity: 1;
+  }
 }
 
 .md-tabs__link:hover {
@@ -382,15 +437,16 @@ body {
 }
 
 .md-nav__link {
-  font-size: 0.78rem;
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--maxfac-text-secondary);
-  padding: 0.5em 0.75em;
+  padding: 0.55em 0.8em;
   border-radius: var(--maxfac-radius-sm);
   transition: all var(--maxfac-duration) var(--maxfac-ease);
-  min-height: 36px;
+  min-height: 40px;
   display: flex;
   align-items: center;
+  letter-spacing: -0.01em;
 }
 
 .md-nav__link:hover {
@@ -399,58 +455,76 @@ body {
 }
 
 .md-nav__link--active {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--maxfac-teal) !important;
   background: var(--maxfac-teal-soft);
+  border-left: 3px solid var(--maxfac-teal);
+  padding-left: calc(0.8em - 3px);
 }
 
 /* Nested nav indentation */
 .md-nav--secondary .md-nav__link {
-  font-size: 0.74rem;
+  font-size: 0.75rem;
 }
 
 /* ============================================================
-   8. TABLES — Clean Clinical Data
+   8. TABLES — Sleek Clinical Data
    ============================================================ */
 .md-typeset table:not([class]) {
   width: 100%;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   border: 1px solid var(--maxfac-border);
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: var(--maxfac-radius-md);
   overflow: hidden;
-  margin: 1.5em 0;
+  margin: 1.8em 0;
+  box-shadow: var(--maxfac-shadow-sm);
+  background: var(--maxfac-surface-raised);
 }
 
 .md-typeset table:not([class]) thead {
-  background: transparent;
+  background: var(--maxfac-surface);
 }
 
 .md-typeset table:not([class]) th {
   background: var(--maxfac-surface);
   color: var(--maxfac-text-secondary);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.85em 1.1em;
-  border-bottom: 1px solid var(--maxfac-border);
+  letter-spacing: 0.08em;
+  padding: 1em 1.2em;
+  border-bottom: 2px solid var(--maxfac-border);
   text-align: left;
 }
 
+.md-typeset table:not([class]) th:first-child {
+  border-top-left-radius: var(--maxfac-radius-md);
+}
+
+.md-typeset table:not([class]) th:last-child {
+  border-top-right-radius: var(--maxfac-radius-md);
+}
+
 .md-typeset table:not([class]) td {
-  padding: 0.75em 1.1em;
+  padding: 0.85em 1.2em;
   border-bottom: 1px solid var(--maxfac-border-subtle);
   color: var(--maxfac-text-primary);
   vertical-align: top;
+  background: var(--maxfac-surface-raised);
 }
 
 .md-typeset table:not([class]) tr:last-child td {
   border-bottom: none;
 }
 
-.md-typeset table:not([class]) tr:nth-child(even) {
-  background: transparent;
+.md-typeset table:not([class]) tr:last-child td:first-child {
+  border-bottom-left-radius: var(--maxfac-radius-md);
+}
+
+.md-typeset table:not([class]) tr:last-child td:last-child {
+  border-bottom-right-radius: var(--maxfac-radius-md);
 }
 
 .md-typeset table:not([class]) tbody tr {
@@ -461,50 +535,56 @@ body {
   background: var(--maxfac-teal-soft);
 }
 
-/* Responsive table wrapper */
+/* Responsive table wrapper with horizontal scroll */
 .md-typeset__scrollwrap {
-  margin: 1.5em 0;
+  margin: 1.8em 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .md-typeset__table {
   border-radius: var(--maxfac-radius-md);
   border: 1px solid var(--maxfac-border);
   overflow: hidden;
+  box-shadow: var(--maxfac-shadow-sm);
 }
 
 .md-typeset__table table {
   border: none;
+  margin: 0;
 }
 
 /* ============================================================
-   9. ADMONITIONS — Modern Clinical Cards
+   9. ADMONITIONS — Clean Clinical Cards
    ============================================================ */
 .md-typeset .admonition,
 .md-typeset details {
   border: none;
-  border-left: 3px solid;
+  border-left: 4px solid;
   border-radius: var(--maxfac-radius-md);
-  background: var(--maxfac-surface);
-  box-shadow: var(--maxfac-shadow-xs);
-  font-size: 0.85rem;
-  margin: 1.5em 0;
+  background: var(--maxfac-surface-raised);
+  box-shadow: var(--maxfac-shadow-sm);
+  font-size: 0.88rem;
+  margin: 1.8em 0;
   overflow: hidden;
-  transition: box-shadow var(--maxfac-duration) var(--maxfac-ease);
+  transition: box-shadow var(--maxfac-duration) var(--maxfac-ease),
+              transform var(--maxfac-duration) var(--maxfac-ease);
 }
 
 .md-typeset .admonition:hover,
 .md-typeset details:hover {
-  box-shadow: var(--maxfac-shadow-sm);
+  box-shadow: var(--maxfac-shadow-md);
+  transform: translateY(-1px);
 }
 
 .md-typeset .admonition-title,
 .md-typeset details summary {
-  font-weight: 600;
-  font-size: 0.82rem;
-  letter-spacing: 0.01em;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
   border-bottom: 1px solid var(--maxfac-border-subtle);
   background: transparent;
-  padding: 0.7em 1em 0.7em 2.5em;
+  padding: 0.8em 1.1em 0.8em 2.8em;
   min-height: 44px;
   display: flex;
   align-items: center;
@@ -512,14 +592,14 @@ body {
 
 .md-typeset .admonition-title::before,
 .md-typeset details summary::before {
-  font-size: 1.1em;
-  left: 0.7em;
+  font-size: 1.15em;
+  left: 0.85em;
 }
 
 .md-typeset .admonition > :last-child,
 .md-typeset details > :last-child {
   margin-bottom: 0;
-  padding-bottom: 0.75em;
+  padding-bottom: 0.85em;
 }
 
 /* --- Clinical Pearl (tip) --- */
@@ -531,6 +611,11 @@ body {
   background: var(--maxfac-teal-soft);
 }
 
+.md-typeset .admonition.tip .admonition-title,
+.md-typeset details.tip summary {
+  color: var(--maxfac-teal-dark);
+}
+
 /* --- Note / Info --- */
 .md-typeset .admonition.note,
 .md-typeset details.note,
@@ -538,6 +623,11 @@ body {
 .md-typeset details.info {
   border-left-color: var(--maxfac-blue);
   background: var(--maxfac-blue-soft);
+}
+
+.md-typeset .admonition.note .admonition-title,
+.md-typeset details.note summary {
+  color: var(--maxfac-blue);
 }
 
 /* --- Warning / Caution --- */
@@ -549,6 +639,11 @@ body {
   background: var(--maxfac-amber-soft);
 }
 
+.md-typeset .admonition.warning .admonition-title,
+.md-typeset details.warning summary {
+  color: var(--maxfac-amber);
+}
+
 /* --- Danger / Critical --- */
 .md-typeset .admonition.danger,
 .md-typeset details.danger,
@@ -558,6 +653,11 @@ body {
   background: var(--maxfac-red-soft);
 }
 
+.md-typeset .admonition.danger .admonition-title,
+.md-typeset details.danger summary {
+  color: var(--maxfac-red);
+}
+
 /* --- Evidence / Quote --- */
 .md-typeset .admonition.quote,
 .md-typeset details.quote,
@@ -565,6 +665,11 @@ body {
 .md-typeset details.cite {
   border-left-color: var(--maxfac-purple);
   background: var(--maxfac-purple-soft);
+}
+
+.md-typeset .admonition.quote .admonition-title,
+.md-typeset details.quote summary {
+  color: var(--maxfac-purple);
 }
 
 /* --- Success / Check --- */
@@ -593,33 +698,35 @@ body {
 }
 
 /* ============================================================
-   10. CODE & CPT CODES
+   10. CODE & CPT/CDT CODES
    ============================================================ */
 .md-typeset code {
   background: var(--maxfac-code-bg);
   color: var(--maxfac-code-text);
-  border-radius: 6px;
-  font-size: 0.82em;
-  font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', monospace;
-  padding: 0.15em 0.45em;
-  font-weight: 450;
-  border: 1px solid var(--maxfac-border-subtle);
+  border-radius: 5px;
+  font-size: 0.84em;
+  font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', 'Consolas', monospace;
+  padding: 0.2em 0.5em;
+  font-weight: 500;
+  border: 1px solid rgba(78, 205, 196, 0.15);
+  letter-spacing: -0.02em;
 }
 
 .md-typeset pre {
   border-radius: var(--maxfac-radius-md);
   border: 1px solid var(--maxfac-border);
-  background: var(--maxfac-surface);
-  box-shadow: var(--maxfac-shadow-xs);
-  margin: 1.5em 0;
+  background: var(--maxfac-code-bg);
+  box-shadow: var(--maxfac-shadow-md);
+  margin: 1.8em 0;
 }
 
 .md-typeset pre code {
   background: transparent;
   border: none;
-  padding: 1em 1.25em;
-  font-size: 0.8em;
-  line-height: 1.65;
+  padding: 1.2em 1.4em;
+  font-size: 0.82em;
+  line-height: 1.7;
+  display: block;
 }
 
 /* --- CPT / CDT code highlighting --- */
@@ -627,15 +734,16 @@ body {
 .md-typeset code.cdt {
   background: var(--maxfac-teal-medium);
   color: #00897B;
-  font-weight: 600;
-  border-color: rgba(0, 191, 165, 0.2);
+  font-weight: 700;
+  border-color: rgba(78, 205, 196, 0.3);
+  letter-spacing: 0.02em;
 }
 
 [data-md-color-scheme="slate"] .md-typeset code.cpt,
 [data-md-color-scheme="slate"] .md-typeset code.cdt {
   background: var(--maxfac-teal-medium);
   color: var(--maxfac-teal);
-  border-color: rgba(45, 212, 191, 0.2);
+  border-color: rgba(78, 205, 196, 0.25);
 }
 
 /* ============================================================
@@ -643,13 +751,15 @@ body {
    ============================================================ */
 .md-search__input {
   border-radius: var(--maxfac-radius-lg);
-  font-size: 0.82rem;
-  background: rgba(255, 255, 255, 0.1);
-  transition: background var(--maxfac-duration) var(--maxfac-ease);
+  font-size: 0.84rem;
+  background: rgba(255, 255, 255, 0.12);
+  transition: background var(--maxfac-duration) var(--maxfac-ease),
+              box-shadow var(--maxfac-duration) var(--maxfac-ease);
 }
 
 .md-search__input:focus {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 0 2px rgba(78, 205, 196, 0.3);
 }
 
 .md-search-result__item {
@@ -669,38 +779,40 @@ body {
    12. FOOTER
    ============================================================ */
 .md-footer {
-  background: var(--md-primary-fg-color);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--maxfac-gradient-hero);
+  border-top: 1px solid rgba(78, 205, 196, 0.08);
 }
 
 .md-footer-meta {
-  background: var(--md-primary-fg-color--dark);
+  background: linear-gradient(180deg, #0A1628 0%, #050B14 100%);
 }
 
 .md-footer__link {
-  transition: opacity var(--maxfac-duration) var(--maxfac-ease);
+  transition: opacity var(--maxfac-duration) var(--maxfac-ease),
+              transform var(--maxfac-duration) var(--maxfac-ease);
   min-height: 44px;
   display: inline-flex;
   align-items: center;
 }
 
 .md-footer__link:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  transform: translateX(2px);
 }
 
 /* ============================================================
    13. CONTENT TABS (MkDocs Material)
    ============================================================ */
 .md-typeset .tabbed-labels {
-  border-bottom: 1px solid var(--maxfac-border);
+  border-bottom: 2px solid var(--maxfac-border);
 }
 
 .md-typeset .tabbed-labels > label {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--maxfac-text-tertiary);
-  padding: 0.75em 1em;
-  border-bottom: 2px solid transparent;
+  padding: 0.8em 1.2em;
+  border-bottom: 3px solid transparent;
   transition: all var(--maxfac-duration) var(--maxfac-ease);
   min-height: 44px;
   cursor: pointer;
@@ -715,22 +827,22 @@ body {
 .md-typeset input.tabbed-set:checked + label {
   color: var(--maxfac-teal);
   border-bottom-color: var(--maxfac-teal);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .md-typeset .tabbed-content {
-  padding: 1em 0;
+  padding: 1.2em 0;
 }
 
 /* ============================================================
    14. TAGS
    ============================================================ */
 .md-typeset .md-tag {
-  font-size: 0.65rem;
-  font-weight: 600;
+  font-size: 0.68rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.25em 0.6em;
+  letter-spacing: 0.06em;
+  padding: 0.3em 0.7em;
   border-radius: 100px;
   background: var(--maxfac-surface);
   border: 1px solid var(--maxfac-border);
@@ -742,53 +854,57 @@ body {
   background: var(--maxfac-teal-soft);
   border-color: var(--maxfac-teal);
   color: var(--maxfac-teal);
+  transform: translateY(-1px);
 }
 
 /* ============================================================
    15. CITATION STYLING
    ============================================================ */
 .md-typeset .citation {
-  font-size: 0.78rem;
-  line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1.7;
   color: var(--maxfac-text-secondary);
-  border-left: 2px solid var(--maxfac-border);
-  padding-left: 1em;
-  margin: 0.75em 0;
+  border-left: 3px solid var(--maxfac-border);
+  padding-left: 1.2em;
+  margin: 0.85em 0;
+  font-style: italic;
 }
 
 /* ============================================================
    16. MERMAID DIAGRAMS
    ============================================================ */
 .mermaid {
-  margin: 2em 0;
+  margin: 2.5em 0;
   text-align: center;
   background: var(--maxfac-surface);
   border: 1px solid var(--maxfac-border);
   border-radius: var(--maxfac-radius-md);
-  padding: 1.5em;
+  padding: 2em;
+  box-shadow: var(--maxfac-shadow-sm);
 }
 
 /* ============================================================
-   17. HERO AREA — Premium Home Page
+   17. HERO AREA — Premium Home Page with Gradient
    ============================================================ */
 .md-content [data-md-component="content"] > .md-typeset:first-child > h1:first-child {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.045em;
   line-height: 1.1;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
 }
 
 /* Hero section styling for index page */
 .md-typeset .hero-section,
 .md-typeset .md-hero {
-  background: linear-gradient(135deg, #0D1B2A 0%, #1B3A5C 50%, #0D1B2A 100%);
+  background: var(--maxfac-gradient-hero);
   color: #FFFFFF;
-  padding: 3em 2em;
+  padding: 3.5em 2.5em;
   border-radius: var(--maxfac-radius-lg);
-  margin: -1em -0.5em 2em -0.5em;
+  margin: -1em -0.5em 2.5em -0.5em;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--maxfac-shadow-xl);
 }
 
 .md-typeset .hero-section::before,
@@ -796,29 +912,37 @@ body {
   content: '';
   position: absolute;
   top: -50%;
-  right: -20%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(0, 191, 165, 0.12) 0%, transparent 70%);
+  right: -15%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(78, 205, 196, 0.15) 0%, transparent 70%);
   pointer-events: none;
+  animation: hero-glow 8s ease-in-out infinite alternate;
+}
+
+@keyframes hero-glow {
+  from { opacity: 0.4; transform: scale(1); }
+  to { opacity: 0.7; transform: scale(1.1); }
 }
 
 .md-typeset .hero-section::after,
 .md-typeset .md-hero::after {
   content: '';
   position: absolute;
-  bottom: -30%;
-  left: -10%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(0, 191, 165, 0.06) 0%, transparent 70%);
+  bottom: -25%;
+  left: -8%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(78, 205, 196, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
 .md-typeset .hero-section h1,
 .md-typeset .md-hero h1 {
   color: #FFFFFF;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .md-typeset .hero-section h1::after,
@@ -828,58 +952,61 @@ body {
 
 .md-typeset .hero-section p,
 .md-typeset .md-hero p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.05rem;
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .hero-section,
 [data-md-color-scheme="slate"] .md-typeset .md-hero {
-  background: linear-gradient(135deg, #0F1419 0%, #1C252F 50%, #0F1419 100%);
-  border: 1px solid var(--maxfac-border);
+  background: var(--maxfac-gradient-hero);
+  border: 1px solid rgba(78, 205, 196, 0.12);
 }
 
 /* ============================================================
    18. BUTTONS & INTERACTIVE ELEMENTS
    ============================================================ */
 .md-typeset .md-button {
-  border-radius: var(--maxfac-radius-sm);
-  font-weight: 600;
-  font-size: 0.82rem;
-  letter-spacing: 0.01em;
-  padding: 0.65em 1.5em;
+  border-radius: var(--maxfac-radius-md);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  padding: 0.75em 1.8em;
   transition: all var(--maxfac-duration) var(--maxfac-ease);
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  gap: 0.5em;
 }
 
 .md-typeset .md-button--primary {
-  background: var(--maxfac-teal);
+  background: var(--maxfac-gradient-accent);
   border-color: var(--maxfac-teal);
   color: #FFFFFF;
-  box-shadow: var(--maxfac-shadow-sm);
+  box-shadow: var(--maxfac-shadow-md);
 }
 
 .md-typeset .md-button--primary:hover {
-  background: #00A893;
-  box-shadow: var(--maxfac-shadow-md);
-  transform: translateY(-1px);
+  background: var(--maxfac-teal-dark);
+  box-shadow: var(--maxfac-shadow-lg);
+  transform: translateY(-2px);
 }
 
 /* ============================================================
    19. TABLE OF CONTENTS (right sidebar)
    ============================================================ */
 .md-nav--secondary .md-nav__link {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--maxfac-text-tertiary);
   transition: color var(--maxfac-duration) var(--maxfac-ease);
-  padding: 0.35em 0.75em;
+  padding: 0.4em 0.8em;
 }
 
 .md-nav--secondary .md-nav__link--active {
   color: var(--maxfac-teal) !important;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .md-nav--secondary .md-nav__link:hover {
@@ -887,11 +1014,11 @@ body {
 }
 
 /* ============================================================
-   20. SCROLLBAR STYLING
+   20. SCROLLBAR STYLING — Thin & Refined
    ============================================================ */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -900,23 +1027,32 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--maxfac-border);
-  border-radius: 3px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--maxfac-text-tertiary);
+  background: var(--maxfac-teal);
+  background-clip: padding-box;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--maxfac-border) transparent;
 }
 
 /* ============================================================
    21. SELECTION HIGHLIGHT
    ============================================================ */
 ::selection {
-  background: rgba(0, 191, 165, 0.2);
+  background: rgba(78, 205, 196, 0.25);
   color: var(--maxfac-text-primary);
 }
 
 [data-md-color-scheme="slate"] ::selection {
-  background: rgba(45, 212, 191, 0.25);
+  background: rgba(78, 205, 196, 0.3);
 }
 
 /* ============================================================
@@ -924,35 +1060,38 @@ body {
    ============================================================ */
 .md-typeset img {
   border-radius: var(--maxfac-radius-md);
-  box-shadow: var(--maxfac-shadow-sm);
-  transition: box-shadow var(--maxfac-duration) var(--maxfac-ease);
+  box-shadow: var(--maxfac-shadow-md);
+  transition: box-shadow var(--maxfac-duration) var(--maxfac-ease),
+              transform var(--maxfac-duration) var(--maxfac-ease);
 }
 
 .md-typeset img:hover {
-  box-shadow: var(--maxfac-shadow-md);
+  box-shadow: var(--maxfac-shadow-lg);
+  transform: translateY(-2px);
 }
 
 .md-typeset figure {
-  margin: 2em 0;
+  margin: 2.5em 0;
 }
 
 .md-typeset figcaption {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--maxfac-text-tertiary);
   text-align: center;
-  margin-top: 0.5em;
+  margin-top: 0.7em;
   font-style: italic;
+  letter-spacing: 0.01em;
 }
 
 /* ============================================================
    23. FOOTNOTES
    ============================================================ */
 .md-typeset .footnote {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--maxfac-text-secondary);
   border-top: 1px solid var(--maxfac-divider);
-  margin-top: 2em;
-  padding-top: 1em;
+  margin-top: 2.5em;
+  padding-top: 1.2em;
 }
 
 /* ============================================================
@@ -962,9 +1101,10 @@ body {
   background: var(--maxfac-surface);
   border: 1px solid var(--maxfac-border);
   border-radius: 6px;
-  box-shadow: 0 1px 0 var(--maxfac-border);
-  font-size: 0.78em;
-  padding: 0.15em 0.45em;
+  box-shadow: 0 2px 0 var(--maxfac-border);
+  font-size: 0.8em;
+  padding: 0.2em 0.5em;
+  font-family: 'SF Mono', monospace;
 }
 
 /* ============================================================
@@ -972,131 +1112,138 @@ body {
    ============================================================ */
 .md-typeset .task-list-item input[type="checkbox"] {
   accent-color: var(--maxfac-teal);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }
 
 /* ============================================================
    26. DEFINITIONS
    ============================================================ */
 .md-typeset dl dt {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--maxfac-text-primary);
-  margin-top: 1em;
+  margin-top: 1.2em;
 }
 
 .md-typeset dl dd {
   color: var(--maxfac-text-secondary);
-  margin-bottom: 1em;
-  padding-left: 1.5em;
-  border-left: 2px solid var(--maxfac-border-subtle);
+  margin-bottom: 1.2em;
+  padding-left: 1.8em;
+  border-left: 3px solid var(--maxfac-border-subtle);
 }
 
 /* ============================================================
-   27. MOBILE — iPhone Optimized
+   27. MOBILE — iPhone Optimized (Touch-Friendly)
    ============================================================ */
 @media screen and (max-width: 76.1875em) {
   .md-typeset {
-    font-size: 0.92rem;
-    line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.75;
   }
 
   .md-typeset h1 {
-    font-size: 1.7rem;
-    letter-spacing: -0.03em;
+    font-size: 1.8rem;
+    letter-spacing: -0.035em;
   }
 
   .md-typeset h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .md-typeset h3 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .md-content__inner {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
   }
 
-  /* Touch targets: 44px minimum */
+  /* Touch targets: 44px minimum (Apple HIG) */
   .md-nav__link {
     min-height: 44px;
-    padding: 0.65em 0.75em;
+    padding: 0.7em 0.8em;
   }
 
   .md-tabs__link {
     min-height: 44px;
   }
 
-  /* Tables: breathe on mobile */
+  /* Tables: compact & scrollable on mobile */
   .md-typeset table:not([class]) {
-    font-size: 0.78rem;
+    font-size: 0.8rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .md-typeset table:not([class]) th,
   .md-typeset table:not([class]) td {
-    padding: 0.6em 0.75em;
+    padding: 0.7em 0.85em;
+    white-space: nowrap;
   }
 
   /* Admonitions: compact on mobile */
   .md-typeset .admonition,
   .md-typeset details {
-    margin: 1.25em 0;
-    font-size: 0.84rem;
+    margin: 1.5em 0;
+    font-size: 0.88rem;
   }
 
   /* Hero: mobile sizing */
   .md-typeset .hero-section,
   .md-typeset .md-hero {
-    padding: 2em 1.25em;
-    margin: -0.5em -0.25em 1.5em -0.25em;
+    padding: 2.5em 1.5em;
+    margin: -0.8em -0.4em 2em -0.4em;
     border-radius: var(--maxfac-radius-md);
   }
 
   .md-typeset .hero-section h1,
   .md-typeset .md-hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .md-content [data-md-component="content"] > .md-typeset:first-child > h1:first-child {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
-/* Small phones (iPhone SE etc.) */
+/* Small phones (iPhone SE, etc.) */
 @media screen and (max-width: 30em) {
   .md-typeset {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
   }
 
   .md-typeset h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .md-typeset h2 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .md-content__inner {
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
   }
 
   .md-typeset .hero-section h1,
   .md-typeset .md-hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .md-typeset table:not([class]) th,
   .md-typeset table:not([class]) td {
-    padding: 0.5em 0.55em;
-    font-size: 0.74rem;
+    padding: 0.6em 0.65em;
+    font-size: 0.76rem;
   }
 }
 
 /* Tablet landscape — expand content width slightly */
 @media screen and (min-width: 76.25em) and (max-width: 100em) {
   .md-content__inner {
-    max-width: 760px;
+    max-width: 780px;
   }
 }
 
@@ -1135,7 +1282,7 @@ body {
   }
 
   .md-typeset h1 {
-    font-size: 20pt;
+    font-size: 22pt;
     page-break-after: avoid;
     color: #000000;
   }
@@ -1145,13 +1292,13 @@ body {
   }
 
   .md-typeset h2 {
-    font-size: 16pt;
+    font-size: 17pt;
     page-break-after: avoid;
     border-top-color: #CCCCCC;
   }
 
   .md-typeset h3 {
-    font-size: 13pt;
+    font-size: 14pt;
     page-break-after: avoid;
   }
 
@@ -1201,19 +1348,14 @@ body {
 .md-tabs__link:focus-visible,
 .md-search__input:focus-visible,
 .md-header__button:focus-visible {
-  outline: 2px solid var(--maxfac-teal);
+  outline: 3px solid var(--maxfac-teal);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 /* ============================================================
-   30. SMOOTH SCROLLING
+   30. SMOOTH SCROLLING & MOTION
    ============================================================ */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 4em;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1225,6 +1367,7 @@ html {
 
   * {
     transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }
 
@@ -1232,29 +1375,51 @@ html {
    31. TOOLTIPS & ABBREVIATIONS
    ============================================================ */
 .md-typeset abbr {
-  text-decoration: underline dotted var(--maxfac-text-tertiary);
+  text-decoration: underline dotted var(--maxfac-teal);
   text-underline-offset: 3px;
   cursor: help;
+  font-weight: 500;
 }
 
 /* ============================================================
-   32. CONTENT CARDS (for grid layouts)
+   32. CONTENT CARDS — Premium Hover Lift
    ============================================================ */
 .md-typeset .grid .card,
 .md-typeset .grid > :is(ul, ol) > li {
   border: 1px solid var(--maxfac-border);
   border-radius: var(--maxfac-radius-md);
-  padding: 1.25em;
+  padding: 1.5em;
   background: var(--maxfac-surface-raised);
-  box-shadow: var(--maxfac-shadow-xs);
+  box-shadow: var(--maxfac-shadow-sm);
   transition: all var(--maxfac-duration) var(--maxfac-ease);
+  position: relative;
 }
 
 .md-typeset .grid .card:hover,
 .md-typeset .grid > :is(ul, ol) > li:hover {
-  box-shadow: var(--maxfac-shadow-md);
-  transform: translateY(-2px);
+  box-shadow: var(--maxfac-shadow-lg);
+  transform: translateY(-4px);
   border-color: var(--maxfac-teal);
+}
+
+.md-typeset .grid .card::after,
+.md-typeset .grid > :is(ul, ol) > li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--maxfac-radius-md);
+  background: linear-gradient(135deg, transparent 0%, rgba(78, 205, 196, 0.03) 100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--maxfac-duration) var(--maxfac-ease);
+}
+
+.md-typeset .grid .card:hover::after,
+.md-typeset .grid > :is(ul, ol) > li:hover::after {
+  opacity: 1;
 }
 
 /* ============================================================
@@ -1263,19 +1428,19 @@ html {
 .md-typeset .status-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.35em;
-  font-size: 0.7rem;
-  font-weight: 600;
+  gap: 0.4em;
+  font-size: 0.72rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 0.25em 0.7em;
+  letter-spacing: 0.06em;
+  padding: 0.3em 0.8em;
   border-radius: 100px;
 }
 
 .md-typeset .status-badge::before {
   content: '';
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -1283,15 +1448,18 @@ html {
 .md-typeset .status-badge--active {
   background: var(--maxfac-teal-soft);
   color: var(--maxfac-teal);
+  border: 1px solid var(--maxfac-teal);
 }
 
 .md-typeset .status-badge--active::before {
   background: var(--maxfac-teal);
+  box-shadow: 0 0 4px var(--maxfac-teal);
 }
 
 .md-typeset .status-badge--warning {
   background: var(--maxfac-amber-soft);
   color: var(--maxfac-amber);
+  border: 1px solid var(--maxfac-amber);
 }
 
 .md-typeset .status-badge--warning::before {
@@ -1301,6 +1469,7 @@ html {
 .md-typeset .status-badge--critical {
   background: var(--maxfac-red-soft);
   color: var(--maxfac-red);
+  border: 1px solid var(--maxfac-red);
 }
 
 .md-typeset .status-badge--critical::before {
@@ -1337,4 +1506,27 @@ html {
   background-size: 200% 100%;
   animation: maxfac-shimmer 1.5s infinite;
   border-radius: var(--maxfac-radius-sm);
+}
+
+/* ============================================================
+   36. MICRO-INTERACTIONS
+   ============================================================ */
+
+/* Subtle pulse on active elements */
+@keyframes pulse-teal {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.md-nav__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: var(--maxfac-teal);
+  border-radius: 0 2px 2px 0;
+  animation: pulse-teal 2s ease-in-out infinite;
 }
