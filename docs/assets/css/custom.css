@@ -7,7 +7,7 @@
 /* ============================================================
    0. CUSTOM FONT IMPORT
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap');
+/* Apple system fonts — no import needed, SF Pro renders natively on Apple devices */
 
 /* ============================================================
    1. DESIGN TOKENS — Premium Medical Palette
@@ -175,7 +175,7 @@ body {
    3. TYPOGRAPHY — Bold, Authoritative, Medical
    ============================================================ */
 .md-typeset {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
   font-size: 0.95rem;
   line-height: 1.8;
   color: var(--maxfac-text-primary);
@@ -185,7 +185,7 @@ body {
 
 /* --- Headings: Tight letter-spacing, bold hierarchy --- */
 .md-typeset h1 {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
   font-weight: 800;
   font-size: 2.2rem;
   letter-spacing: -0.04em;
@@ -209,7 +209,7 @@ body {
 }
 
 .md-typeset h2 {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: -0.03em;
@@ -229,7 +229,7 @@ body {
 }
 
 .md-typeset h3 {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: -0.02em;
@@ -344,7 +344,7 @@ body {
 }
 
 .md-header__title {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.02em;

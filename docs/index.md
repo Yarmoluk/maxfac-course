@@ -66,7 +66,7 @@ Aligned to AAOMS Parameters of Care 2023
 
 <div class="grid cards" markdown>
 
--   :material-medical-bag:{ .lg .middle } **Clinical Foundations**
+-   :fontawesome-solid-bone:{ .lg .middle } **Clinical Foundations**
 
     ---
 
@@ -74,7 +74,7 @@ Aligned to AAOMS Parameters of Care 2023
 
     [:octicons-arrow-right-24: Part I](chapters/01/index.md)
 
--   :material-scalpel:{ .lg .middle } **Core Procedures**
+-   :fontawesome-solid-teeth:{ .lg .middle } **Core Procedures**
 
     ---
 
@@ -82,7 +82,7 @@ Aligned to AAOMS Parameters of Care 2023
 
     [:octicons-arrow-right-24: Part II](chapters/05/index.md)
 
--   :material-hospital-building:{ .lg .middle } **Advanced Clinical**
+-   :fontawesome-solid-hospital:{ .lg .middle } **Advanced Clinical**
 
     ---
 
@@ -90,7 +90,7 @@ Aligned to AAOMS Parameters of Care 2023
 
     [:octicons-arrow-right-24: Part III](chapters/11/index.md)
 
--   :material-robot-industrial:{ .lg .middle } **Surgical Technology**
+-   :material-robot-outline:{ .lg .middle } **Surgical Technology**
 
     ---
 
@@ -98,7 +98,7 @@ Aligned to AAOMS Parameters of Care 2023
 
     [:octicons-arrow-right-24: Part IV](chapters/14/index.md)
 
--   :material-chart-line:{ .lg .middle } **Practice Operations**
+-   :fontawesome-solid-chart-pie:{ .lg .middle } **Practice Operations**
 
     ---
 
@@ -106,7 +106,7 @@ Aligned to AAOMS Parameters of Care 2023
 
     [:octicons-arrow-right-24: Part V](chapters/17/index.md)
 
--   :material-flask:{ .lg .middle } **Frontiers**
+-   :fontawesome-solid-microscope:{ .lg .middle } **Frontiers**
 
     ---
 
