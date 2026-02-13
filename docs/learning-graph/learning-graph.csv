@@ -1,0 +1,271 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Maxillofacial Bone Anatomy,,ANAT
+2,Mandibular Anatomy,1,ANAT
+3,Maxillary Anatomy,1,ANAT
+4,Orbital Anatomy,1,ANAT
+5,Neurovascular Anatomy,1,ANAT
+6,Trigeminal Nerve Branches,5,ANAT
+7,Facial Nerve Anatomy,5,ANAT
+8,Fascial Planes and Spaces,1|5,ANAT
+9,Vascular Supply of Face,5,ANAT
+10,Muscles of Mastication,1|2,ANAT
+11,TMJ Functional Anatomy,2|10,ANAT
+12,Salivary Gland Anatomy,1|5,ANAT
+13,Nasal and Sinus Anatomy,3|4,ANAT
+14,Dental Occlusion,2|3,ANAT
+15,Cephalometric Landmarks,1|2|3,ANAT
+16,Surgical Approaches,1|5|8,ANAT
+17,Danger Zones in Surgery,5|6|7|8,ANAT
+18,Flap Design Principles,9|16,ANAT
+19,Wound Healing Biology,,ANAT
+20,Bone Healing Physiology,19,ANAT
+21,Osseointegration,1|20,ANAT
+22,Biomechanics of Fixation,1|20,ANAT
+23,Tissue Biomechanics,19,ANAT
+24,Pediatric Craniofacial Growth,1|2|3,ANAT
+25,Airway Anatomy,1|13,ANAT
+26,CBCT Principles,,IMG
+27,CBCT Interpretation,26,IMG
+28,Medical CT Protocols,26,IMG
+29,MRI in OMS,,IMG
+30,Panoramic Radiography,,IMG
+31,Cephalometric Analysis,15|30,IMG
+32,DICOM Workflow,26,IMG
+33,3D Reconstruction,26|32,IMG
+34,Radiation Safety,26,IMG
+35,AI Image Segmentation,27|33,IMG
+36,Pathology on Imaging,27|30,IMG
+37,Fracture Classification,27|1,IMG
+38,Tumor Staging Imaging,28|29|36,IMG
+39,Implant Site Assessment,27,IMG
+40,TMJ Imaging Protocols,27|29|11,IMG
+41,Ultrasound in OMS,,IMG
+42,Intraoperative Imaging,28|33,IMG
+43,Image-Guided Planning,33|42,IMG
+44,Radiographic Diagnosis,27|30|36,IMG
+45,Contrast-Enhanced CT,28,IMG
+46,Local Anesthesia,6,ANES
+47,Nerve Block Techniques,6|46,ANES
+48,IV Sedation Protocols,46,ANES
+49,General Anesthesia in OMS,25|48,ANES
+50,Airway Management,25|49,ANES
+51,Patient Monitoring Standards,48|49,ANES
+52,Emergency Protocols,50|51,ANES
+53,Anesthesia Permit Reqs,49,ANES
+54,Pediatric Sedation,48|24,ANES
+55,Analgesic Pharmacology,,PHARM
+56,Opioid Stewardship,55,PHARM
+57,Antibiotic Prophylaxis,,PHARM
+58,Antibiotic Therapy,57,PHARM
+59,Corticosteroid Use,,PHARM
+60,Hemostatic Agents,,PHARM
+61,Drug Interactions,55|57|59,PHARM
+62,Anticoagulant Management,60|61,PHARM
+63,ERAS Protocols,55|56|57|59,PHARM
+64,CDC Opioid Guidelines,56,PHARM
+65,Pharmacogenomics,55|61,PHARM
+66,Simple Extraction,2|46,DENT
+67,Surgical Extraction,66|16,DENT
+68,Impacted Third Molars,67|27,DENT
+69,Impaction Classification,68|37,DENT
+70,Nerve Injury Management,6|71,DENT
+71,Inferior Alveolar Nerve,6|2,DENT
+72,Lingual Nerve Injury,6|67,DENT
+73,Dry Socket Management,66|19,DENT
+74,OAC/OAF Management,67|13,DENT
+75,Alveoloplasty,66|2,DENT
+76,Pre-Prosthetic Surgery,75,DENT
+77,Tori and Exostoses,1|67,DENT
+78,Surgical Crown Lengthening,67,DENT
+79,Exposure for Orthodontics,67|16,DENT
+80,Root Tip Retrieval,67|27,DENT
+81,Coronectomy,68|71,DENT
+82,Dentoalveolar Infection,58|8,DENT
+83,Ludwig Angina,82|8|50,DENT
+84,Necrotizing Fasciitis,82|8,DENT
+85,Odontogenic Space Infection,82|8|16,DENT
+86,Implant Design and Systems,21,IMPL
+87,Treatment Planning Implants,39|86,IMPL
+88,Conventional Placement,87|46,IMPL
+89,Guided Implant Surgery,87|33|43,IMPL
+90,Robotic Implant Placement,89|202,IMPL
+91,Immediate Implant Placement,88|110,IMPL
+92,Bone Graft Types,20,IMPL
+93,Autogenous Bone Harvest,92|16,IMPL
+94,Allograft Materials,92,IMPL
+95,Xenograft Materials,92,IMPL
+96,Alloplastic Grafts,92,IMPL
+97,Sinus Augmentation,13|92|87,IMPL
+98,Ridge Augmentation,92|87,IMPL
+99,GBR Membrane Techniques,92|98,IMPL
+100,Zygomatic Implants,4|87|97,IMPL
+101,Pterygoid Implants,3|87,IMPL
+102,All-on-X Protocols,87|88|92,IMPL
+103,Peri-Implantitis,86|58,IMPL
+104,Implant Loading Protocols,88,IMPL
+105,Implant Complications,88|70|103,IMPL
+106,Implant CDT Coding,86|226,IMPL
+107,Implant CPT Coding,86|227,IMPL
+108,BMP-2 in Grafting,92|20,IMPL
+109,PRF and PRP Protocols,92|60,IMPL
+110,Socket Preservation,66|92,IMPL
+111,Trauma Assessment,,TRAU
+112,ATLS for OMS,111|50,TRAU
+113,Mandible Fracture Types,2|37,TRAU
+114,Mandibular Angle Fracture,113|22,TRAU
+115,Condylar Fracture,113|11,TRAU
+116,Symphysis Fracture,113|22,TRAU
+117,Midface Fracture,3|37,TRAU
+118,LeFort Fracture Types,117|3,TRAU
+119,ZMC Fracture,117|4,TRAU
+120,Orbital Floor Fracture,4|117,TRAU
+121,NOE Fracture,117|13,TRAU
+122,Panfacial Fracture,113|117|16,TRAU
+123,Soft Tissue Injury,19|16,TRAU
+124,Pediatric Facial Fracture,24|113|117,TRAU
+125,Ballistic Facial Injury,122|123,TRAU
+126,Rigid Fixation Principles,22,TRAU
+127,Plate and Screw Systems,126,TRAU
+128,IMF Techniques,14|126,TRAU
+129,Trauma CPT Coding,113|117|227,TRAU
+130,Nav-Guided Trauma Repair,127|209|42,TRAU
+131,Dentofacial Diagnosis,14|15|31,ORTH
+132,Orthodontic Coordination,131,ORTH
+133,Model Surgery,131|14,ORTH
+134,Virtual Surgical Planning,33|131|43,ORTH
+135,LeFort I Osteotomy,3|16|134,ORTH
+136,BSSO Technique,2|16|134,ORTH
+137,Genioplasty,2|16|134,ORTH
+138,Segmental Osteotomy,135,ORTH
+139,Distraction Osteogenesis,20|22,ORTH
+140,Surgery-First Approach,134|135|136,ORTH
+141,IPS CaseDesigner,134,ORTH
+142,Materialise ProPlan CMF,134,ORTH
+143,Custom Surgical Splints,134|219,ORTH
+144,Orthognathic Stability,135|136|22,ORTH
+145,Orthognathic Complications,135|136|70,ORTH
+146,Class II Correction,131|136,ORTH
+147,Class III Correction,131|135,ORTH
+148,Facial Asymmetry Correct,131|134|135|136,ORTH
+149,Orthognathic CPT Coding,135|136|227,ORTH
+150,Bimaxillary Surgery,135|136|134,ORTH
+151,TMJ Pathophysiology,11,TMJ
+152,TMD Diagnosis,151|40,TMJ
+153,Conservative TMJ Mgmt,152,TMJ
+154,TMJ Arthrocentesis,152|46,TMJ
+155,TMJ Arthroscopy,152|16,TMJ
+156,Disc Repositioning,155,TMJ
+157,Discectomy,155,TMJ
+158,Eminectomy,155|11,TMJ
+159,Condylectomy,11|16,TMJ
+160,Total Joint Replacement,152|22,TMJ
+161,Costochondral Graft,160|93,TMJ
+162,Patient-Specific TMJ,160|222,TMJ
+163,TMJ Ankylosis Surgery,152|139|16,TMJ
+164,TMJ CPT Coding,152|227,TMJ
+165,Nav-Guided TMJ Surgery,155|209,TMJ
+166,Biopsy Techniques,16|46,PATH
+167,Odontogenic Cysts,36|166,PATH
+168,Non-Odontogenic Cysts,36|166,PATH
+169,Ameloblastoma,167|36,PATH
+170,Odontogenic Keratocyst,167|36,PATH
+171,Benign Jaw Tumors,36|166,PATH
+172,SCC of Oral Cavity,166|38,PATH
+173,Tumor Staging TNM,172,PATH
+174,Surgical Margins,172|16,PATH
+175,Neck Dissection,172|5|16,PATH
+176,Sentinel Lymph Node,172|38,PATH
+177,Free Flap Reconstruction,18|9|174,PATH
+178,Fibula Free Flap,177,PATH
+179,Microvascular Technique,9|177,PATH
+180,Radiation Sequelae,172,PATH
+181,Osteoradionecrosis,180|20,PATH
+182,MRONJ Management,20|166,PATH
+183,Tumor Board Process,172|173,PATH
+184,Chemotherapy Protocols,172,PATH
+185,Immunotherapy in H&N,172|184,PATH
+186,Cleft Lip Repair,16|24,ADVC
+187,Cleft Palate Repair,16|24,ADVC
+188,Alveolar Cleft Grafting,92|186|187,ADVC
+189,Velopharyngeal Insuffic,187,ADVC
+190,Craniosynostosis,24|16,ADVC
+191,Hemifacial Microsomia,24|139,ADVC
+192,Rhinoplasty,13|16,ADVC
+193,Blepharoplasty,4|16,ADVC
+194,Rhytidectomy,7|16,ADVC
+195,Injectable Therapies,,ADVC
+196,OSA Pathophysiology,25,ADVC
+197,MMA for Sleep Apnea,135|136|196,ADVC
+198,DOME Procedure,139|196,ADVC
+199,Hypoglossal Stimulation,196,ADVC
+200,SARPE,3|139|196,ADVC
+201,Surgical Robotics Princ,,TECH
+202,Yomi Robotic System,201|86,TECH
+203,Yomi S and YomiPlan AI,202|35,TECH
+204,da Vinci in TORS,201|172,TECH
+205,Hugo RAS Platform,201,TECH
+206,Versius System,201,TECH
+207,Robotic Credentialing,201|202,TECH
+208,Robotic ROI Analysis,201|236,TECH
+209,Navigation Principles,,TECH
+210,Brainlab Kick System,209,TECH
+211,Stryker Navigation,209,TECH
+212,KLS Martin IPS Nav,209,TECH
+213,X-Guide Navigation,209|86,TECH
+214,Navident System,209|86,TECH
+215,Surface Registration,209,TECH
+216,Fiducial Registration,209,TECH
+217,AR in CMF Surgery,209|33,TECH
+218,Mixed Reality Planning,217,TECH
+219,3D Printing Technology,,TECH
+220,SLA Printing,219,TECH
+221,In-House 3D Printing,219|220,TECH
+222,Patient-Specific Implant,219|33|22,TECH
+223,Custom Cutting Guides,219|134,TECH
+224,Bioprinting Frontiers,219|253,TECH
+225,Piezoelectric Surgery,,TECH
+226,CDT Code System,,OPS
+227,CPT Code System,,OPS
+228,ICD-10 Coding for OMS,,OPS
+229,Medical-Dental CrossCode,226|227,OPS
+230,Prior Authorization,229,OPS
+231,Insurance Appeals,230,OPS
+232,Medicare OMS Guidelines,227|228,OPS
+233,Medicaid Coverage,227|228,OPS
+234,Anesthesia Coding,49|226|227,OPS
+235,Revenue Cycle Mgmt,229|230|236,OPS
+236,Practice Financial KPIs,,OPS
+237,Overhead Management,236,OPS
+238,OMSVision EHR,,OPS
+239,DSN Cloud Software,,OPS
+240,WinOMS System,,OPS
+241,Referral Management,238,OPS
+242,Staffing and HR,236,OPS
+243,OSHA Compliance,,OPS
+244,HIPAA Compliance,,OPS
+245,Infection Control,243,OPS
+246,Office Design for OMS,236|242,OPS
+247,Malpractice Risk Mgmt,,OPS
+248,Practice Valuation,236|237,OPS
+249,DSO and PE Landscape,248,OPS
+250,No Surprises Act,227|247,OPS
+251,MSC in Bone Regeneration,20|92,FRONT
+252,Dental Pulp Stem Cells,251,FRONT
+253,Scaffold-Based Regen,251,FRONT
+254,Tissue Engineering,251|253,FRONT
+255,AI CBCT Analysis,35|27,FRONT
+256,AI Pathology Detection,35|36,FRONT
+257,AI Treatment Planning,255|134,FRONT
+258,NLP Clinical Documenting,238,FRONT
+259,Telemedicine in OMS,,FRONT
+260,Virtual Consultations,259,FRONT
+261,Remote Postop Monitoring,259|260,FRONT
+262,Telehealth Billing,259|227,FRONT
+263,ABOMS Certification,,FRONT
+264,ABOMS MOC Requirements,263,FRONT
+265,CE Planning Strategy,264,FRONT
+266,Evidence-Based Practice,,FRONT
+267,Literature Evaluation,266,FRONT
+268,Journal Club Method,267,FRONT
+269,Academic Mentorship,266,FRONT
+270,Complete Practice Design,236|237|242|246|248,FRONT

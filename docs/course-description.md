@@ -1,3 +1,8 @@
+---
+title: Course Description
+description: A detailed course description for Modern Oral & Maxillofacial Surgery
+quality_score: 96
+---
 # Course Description
 
 ## Modern Oral & Maxillofacial Surgery: A Practitioner's Intelligent Reference
